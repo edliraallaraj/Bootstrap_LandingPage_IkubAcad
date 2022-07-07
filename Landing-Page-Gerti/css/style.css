@@ -1,0 +1,15 @@
+
+
+/* ----------------------------------------------------------------- */
+/* NavBar */
+
+.navbar {
+    background-color: #cc7d2e;
+}
+.navbar li a {
+    color:white;
+}
+.active {
+    color:rgb(148, 18, 18);
+    text-decoration: underline;
+}
