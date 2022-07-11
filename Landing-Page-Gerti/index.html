@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>My official Website</title>
@@ -17,20 +20,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about-me">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
@@ -39,10 +42,131 @@
           </div>
         </div>
       </nav>
-      <section>
-        <div class="contrainer-fluid">
+      <section class="header container-fluid">
+          <div class="header-container row">
+            <div class="col-11 d-flex justify-content-center ps-0">
+              <div class="header-img"><img src="images/header-background.jpg" alt="keyboard,desk,notebook background pic"></div>
+              <div class="header-text">
+                <h1>Hello, Welcome to my official Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis explicabo cupiditate similique eveniet accusantium, optio distinctio eum dolor odio ducimus. Atque modi quisquam harum impedit inventore provident nemo. Ipsum, a.</p>
+                <a class="btn header-btn btn-sm" href="#about-me" role="button">See more</a>
+              </div> 
+            </div>
+          </div>
+      </section>
+      <section id="about-me">
+        <div class="container">
+          <div class="about-container row">
+            <h2 class="text-center mb-5 orange-brownish-h2">About Me</h2>
+            <figure class="figure col-4 text-right">
+              <img src="images/profile-img.jpg" class="figure-img img-fluid " alt="...">
+              <figcaption class="figure-caption">Front End Web Developer</figcaption>
+            </figure>
+            <div class="vertical-line d-flex">
+              <div class="vr"></div>
+            </div>
+            <div class="intro col-7">
+              <h3>Gerti Hysenaj</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo iusto quaerat quibusdam eius beatae, facere soluta, quod cumque minus a, officiis earum harum labore! Nostrum explicabo praesentium minima dolorem!</p>
+            </div>
+          </div>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <div class="portfolio-container row align-items-center d-flex justify-content-center">
+            <h2 class="text-center mb-5 orange-brownish-h2" id="portfolio">Portfolio</h2>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb1.png" class="rounded float-start img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb2.png" class="rounded mx-auto img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb3.png" class="rounded float-end img-thumbnail " alt="..."></a>
+            </div>
+          </div>
+          <div class="portfolio-container row align-items-center d-flex justify-content-center">
+            <div class="col-4">
+              <a href="#"><img src="images/thumb4.png" class="rounded float-start img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb5.png" class="rounded mx-auto img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb6.png" class="rounded float-end img-thumbnail " alt="..."></a>
+            </div>
+          </div>
+          <div class="portfolio-container row align-items-center d-flex justify-content-center">
+            <div class="col-4">
+              <a href="#"><img src="images/thumb7.png" class="rounded float-start img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb8.png" class="rounded mx-auto img-thumbnail" alt="..."></a>
+            </div>
+            <div class="col-4">
+              <a href="#"><img src="images/thumb9.png" class="rounded float-end img-thumbnail " alt="..."></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="blog-container row  d-flex justify-content-center">
+            <h2 class="text-center mb-5 orange-brownish-h2" id="blog">Blog</h2>
+            <div class="card" style="width: 18rem;">
+              <img src="images/blog-post-img1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Post title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsum inventore labore nobis expedita .</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/blog-post-img2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Post title</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, nemo rem? Quam fuga?</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="images/blog-post-img3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Post title</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, consequatur itaque aut!</p>
+                <a href="#" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="team-container row">
+            <h2 class="text-center mb-5 orange-brownish-h2" id="team">Team</h2>
+            <figure class="figure col-3 text-center">
+              <img src="images/thumb1.png" class="figure-img img-fluid " alt="...">
+              <figcaption class="figure-caption">Prove</figcaption>
+            </figure>
+            <figure class="figure col-3 text-center">
+              <img src="images/thumb1.png" class="figure-img img-fluid " alt="...">
+              <figcaption class="figure-caption">Prove</figcaption>
+            </figure>
+            <figure class="figure col-3 text-center">
+              <img src="images/thumb1.png" class="figure-img img-fluid " alt="...">
+              <figcaption class="figure-caption">Prove</figcaption>
+            </figure>
+            <figure class="figure col-3 text-center">
+              <img src="images/thumb1.png" class="figure-img img-fluid " alt="...">
+              <figcaption class="figure-caption">Prove</figcaption>
+            </figure>
+          
+          </div>
+        </div>
+      </section>
+      <section>
+
 
 
 
