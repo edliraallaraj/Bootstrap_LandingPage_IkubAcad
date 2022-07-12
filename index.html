@@ -1,15 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <style>
+    html {
+  scroll-behavior: smooth;
+   }
+
+   .navbar-expand-lg{
+    padding: 15px;
+   }
+    .view{
+      background-image: url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80);
+      
+    }
+    .text-warning{
+      margin-top: 200px;
+      text-align: center;
+      opacity: 1;
+    }
+    .p{
+      margin-left: 504px;
+      margin-top: 35px;
+
+    }
+    .btn{
+      margin: 30px;
+      margin-left: 500px;
+    }
+    .rounded-circle{
+      margin-top: -21px;
+      margin-left: 198px;
+    }
+    .text-center{
+      margin-top: 150px;
+      margin-bottom: 50px;
+    }
+    .WebDev{
+      margin-left: 291px;
+    }
+   
+    .rounded{
+      margin-top: 40px;
+      margin-left: 20px;
+    }
+    .border{
+      margin-block-start: 200px;
+      
+    }
+    .texth4{
+      color: orange;
+      margin-left: 20px ;
+    }
+   .textP{
+      margin-top: 10px;
+      margin-left: 20px;
+      background-color: white;
+      
+    }
+    .btn-link{
+      margin-left: 20px;
+      box-sizing: border-box;
+    }
+
+    .rounded2{
+      display: flex;
+      flex-direction: row;
+      
+    }
+    .name{
+      position: absolute;
+      margin-top: -25px;
+      margin-left: 100px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      text-decoration: double;
+      text-transform: uppercase;
+      transition: transform 500ms ease-in-out;
+    }
+
+    .name:hover{
+      background-color: orange;
+      transform: translate3d(100%);
+      animation: upp 2s ease-in-out backwards 1;
+    }
+
+    @keyframes upp {
+     from{
+      opacity: 1;
+      line-height: 180px;
+      margin-top: -200px;
+      width: 250px;
+      border-top-right-radius: 50% ;
+      margin-left: 0px;
+      transform: translate3d(100%);
+     }
+     to{
+      opacity: 0.5;
+      line-height: 25px;
+      margin-top: -25px;
+      width: 250px;
+      border-top-right-radius: 30% ;
+      margin-left: 0px;
+      transform: translate3d(50%);
+     }
+    }
+    form{
+      margin-top: 160px;
+    }
+    footer{
+      padding: 20px;
+      margin-top: 10px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap landing Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <h3>First commit with git</h3>
-  <h1>Hello by Egli</h1>
-  <h5>My favv </h5>
-  <p>regregre</p>
+    <nav class="navbar-expand-lg  bg-warning">
+      <ul class="nav navbar-header">
+        <li class="nav-item col-sm-7 ">
+          <a class="nav-link text-white " href="#">Home</a>
+        </li>
+          <li class="nav-item  ">
+            <a class="nav-link text-white" href="#sction1">About Me</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#sction2">Portofolio</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#sction3">Blog</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#sction4">Team</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#sction5">Contact</a>
+          </li>
+
+        </ul>
+      </nav>  
+      <div class="container-fluid view  justify-content-center bg-light text-orange img-thumbnail">
+        <h1 class=" text-center text-warning">Hello , Welcome To My official Website</h1>
+      <strong> <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, in nemo,
+        <br> omnis incidunt perspiciatis, voluptatem eius iusto enim cumque id a ducimus 
+        <br>tempora aliquam dolorem nostrum officiis earum hic maxime.</p></strong>
+        <button type="button" class="btn btn-warning  text-white" data-target="#btnID" data-toggle="collapse">See more</button>
+        <div id="btnID" class="collapse">
+          <label for="btnID">Thw 100 A nuclear conflict has decimated civilisation. 
+            A century later, a spaceship accommodating humanity's 
+            lone survivors dispatch 100 juvenile delinquents back 
+            to the Earth to determine its habitability.</label>
+        </div>
+    </div>
+
+      </div>
+      <div class="container " style="background-color: rgba(241, 241, 251, 0.512);">
+        <h2 class="text-center text-warning" id="sction1">About Me</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="WhatsAPP1.jpeg" class="rounded-circle" id="myimg"  width="304" height="306"> <br>
+            <label class="WebDev" for="myimg">Web Developer</label>
+          </div>
+          
+          
+          <div class="col-sm-6">
+            <label >I would like to put into practice the knowledge acquired during my studies
+              and I am looking forward to cooperating in a dynamic, innovative and
+              multicultural environment. I have completed a web developer course in a
+              private company and i have expanded my knowledge professionally in
+              JavaScript. The education I completed permit me to engage in various
+              projects that deal with the web development . Now is the perfect time to
+              be responsible for the design and construction of websites to ensure that
+              sites meet user's expectations by ensuring they look good, run smoothly
+              and offer easy access points with no loading issues between pages or
+              error messages.</label>
+          </div>
+          <div class="container " style="background-color: rgba(241, 241, 251, 0.512);">
+            <h1 class="text-warning" id="sction2">Portofolio</h1>
+            <div class="row">
+    
+              <div class="col" >
+                <img  class="rounded" src="https://cdn.dribbble.com/users/2718931/screenshots/10724781/media/bb5fd7ec55c0abb97b79bc139594e516.png?compress=1&resize=400x300" width="300px" height="250px">
+              </div> 
+    
+              <div class="col">
+                <img  class="rounded" src="https://i0.wp.com/themes.svn.wordpress.org/gutenix/1.1.5/screenshot.png?w=572&strip=all" width="300px" height="250px">
+              </div>
+    
+              <div class="col">       
+                <img class="rounded" src="https://i0.wp.com/themes.svn.wordpress.org/appointment/3.2.7/screenshot.png?w=572&strip=all" width="300px" height="250px">
+              </div>
+            <div class="col" >
+                <img class="rounded" src="https://i0.wp.com/themes.svn.wordpress.org/gutenbiz/1.0.20/screenshot.png?w=572&strip=all" width="300px" height="250px">
+              </div>
+            
+              <div class="col" >      
+                <img  class="rounded" src="https://www.themessearch.com/img/opus-blog.jpg" width="300px" height="250px">
+              </div>
+    
+            <div class="col">
+                <img class="rounded" src="https://i.pinimg.com/originals/07/63/42/076342e5b85dce70d795552534ea59b2.jpg" width="300px" height="250px">
+              </div>
+            </div>
+          </div>         
+
+          <div class="container " style="background-color: rgba(241, 241, 251, 0.512);">
+            <h1 class="text-warning" id="sction3" >Blog</h1>
+          <div class="row">
+              <div class="col" >
+                <img  class="rounded" src="WhatsApp2.jpeg" width="300px" height="250px" id="Pershkrim">
+                <h4 class="texth4" for="Pershkrim" >Cooking</h4>
+                <p class="textP border">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita quam quae voluptatem atque corporis alias, quasi ipsa quas fugiat, magni vitae quia. Nostrum, eveniet quasi minima pariatur unde reprehenderit?
+                </p>
+                <a href="#" class="btn-link border">Read More</a>
+              </div> 
+    
+              <div class="col" id="Pershkrim2">
+                <img  class="rounded" src="https://www.webdesign-inspiration.com/article/wp-content/uploads/2021/06/wxm465om4j4.jpg" width="300px" height="250px">
+                <h4 class="texth4" for="Pershkrim" >Photograpy</h4>
+                <p class="textP border">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita quam quae voluptatem atque corporis alias, quasi ipsa quas fugiat, magni vitae quia. Nostrum, eveniet quasi minima pariatur unde reprehenderit?
+                </p>
+                <a href="#" class="btn-link border">Read More</a>
+              </div>
+    
+              <div class="col" id="Pershkrim3">       
+                <img class="rounded" src="WhatsApp4.jpeg" width="300px" height="250px">
+                <h4 class="texth4" for="Pershkrim" >Design</h4>
+                <p class="textP border">Lorem ipsum dolor sit amet consectetur adipisicing elit. A expedita quam quae voluptatem atque corporis alias, quasi ipsa quas fugiat, magni vitae quia. Nostrum, eveniet quasi minima pariatur unde reprehenderit?
+                </p>
+                <a href="#" class="btn-link border">Read More</a>
+              </div>
+          </div>
+          </div>
+
+          <div class="container-lg " style="background-color: rgba(241, 241, 251, 0.512);">
+            <h1 class="text-warning" id="sction4">Our Team</h1>
+            <div class="row">
+    
+              <div class="col" >
+                <img  class="rounded2" src="https://englishtribuneimages.blob.core.windows.net/gallary-content/2020/6/2020_6$largeimg_2106819729.jpg " width="250px" height="200px">
+                <label class="name">John</label>
+                <label >Software Enginner</label>
+              </div> 
+              <div class="col" >      
+                <img  class="rounded2" src=" https://res.cloudinary.com/practicaldev/image/fetch/s--htIPiyTO--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/q7p0u5wfe885e36dj05q.jpg" width="250px" height="200px">
+                <label class="name">Flora</label>
+                <label >Front-End Developer</label>
+              </div>
+    
+              <div class="col">       
+                <img class="rounded2" src=" https://blog.killercoder.io/wp-content/uploads/2020/07/photo-of-man-wearing-eyeglasses-3184611.jpg" width="250px" height="200px">
+                <label class="name">Alex</label>
+                <label >Back-End developer</label>
+              </div>
+            <div class="col" >
+                <img class="rounded2" src=" https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/72AYgWguyRFfesCrDJi8w8/35b0d50e819d179b4d99b5f8e44fb416/GettyImages-1255905368.jpg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000&h=" width="250px" height="200px">
+                <label class="name">Jenny</label>
+                <label>Team Leader</label>
+              </div>
+            </div>
+          </div>    
+
+
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-6">
+                <h1 class="text-warning text-center" id="sction5">Get in Touch</h1>
+              </div>
+          <div class="col-sm-6">
+            <form >
+              <input class="form-control" type="text" name="yourname" value="" placeholder="Your Name"><br>
+              <input class="form-control" type="email" name="email" value="" placeholder="YourEmail@email.com"><br>
+              <textarea rows="4" cols="70"></textarea><br>
+              <input class="btn-warning form-control text-white" type="submit" name="submit" value="Send"> 
+            </form>
+          </div>
+        
+        </div>
+</div></div></div>
+      
+          <footer class="bg-warning">
+            Copyright &copy; 2022 Egli Maja (Web Developer)
+          </footer>
+        
 </body>
 </html>
