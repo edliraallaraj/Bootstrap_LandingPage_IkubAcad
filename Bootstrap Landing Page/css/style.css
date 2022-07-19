@@ -1,0 +1,228 @@
+/*Navbar*/
+nav{
+    background-color: rgba(1, 177, 1, 0.763);
+    width: 100%;
+}
+#nav-list{
+    margin-right: 100px;
+}
+#nav-list a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+#nav-list-right{
+    margin-left: 47%;
+}
+#nav-list-right a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list-right a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list-right a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+/*TOP Image*/
+#imgtop{
+    background-image: url("https://thumbs.dreamstime.com/b/asian-food-served-wooden-table-top-view-white-chinese-vietnamese-cuisine-set-86738748.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10%;
+    margin-top: -20px;
+}
+#imgtop-pg h2{
+    color: rgb(255, 166, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+#imgtop-pg button{
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+#imgtop-pg p{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*About*/
+#about{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    padding: 10%;
+}
+#about h1{
+    color: darkorange;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+#about-margin{
+    margin-left: 20px;
+}
+#about-margin img{
+    border-radius: 50%;
+}
+#about-margin span{
+    margin-left: 120px;
+}
+#about-pg h2{
+    color:rgb(0, 87, 12);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about-pg{
+    border-left: 2px solid rgb(13, 128, 65);
+    text-align: left;
+    padding: 80px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 200px;
+}
+/*Contact*/
+#form-padding{
+    padding: 5%;
+}
+#form-padding h1{
+    margin: 30%;
+    color: darkorange;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+img{
+    margin: 10px;
+}
+
+/*Portfolio*/
+#portfolio h1{
+    color: darkorange;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#portfolio-margin{
+    margin: 10px;
+    padding: 10px;
+}
+#portfolio-margin img{
+    margin: 20px;
+}
+#portfolio-margin img:hover{
+    border: 2px solid rgb(189, 189, 189);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.2s
+}
+#portfolio-margin img:active{
+    border: 3px solid rgb(35, 35, 35);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s
+}
+
+/*Blog*/
+
+#blog{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    padding: 10%;
+}
+#blog h1{
+    color: darkorange;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+#blog-button{
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    text-decoration: none;
+    border-top: 2px solid rgb(159, 159, 159);
+}
+#blog-button a{
+    color: darkblue;
+    text-decoration: none;
+}
+#card{
+    width: 280px;
+    margin-right: 60px;
+}
+#blog-img{
+    padding: 1px;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+#blog-img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.2s
+}
+#blog-button:hover{
+    background-color: orange;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 1.1;
+    cursor: pointer;
+    transition: 0.1s
+}
+#blog-button:active {
+    background-color: cornflowerblue;
+}
+#blog-pg{
+    background-color: white;
+    padding: 1px;
+    margin: 1px;
+}
+#blog-pg h4,p{
+    padding: 5px;
+    margin: 1px;
+}
+
+/*Our Team*/
+
+#our-team{
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    padding: 10%;
+}
+#our-team h1{
+    color: darkorange;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+#our-team-left{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+#img-radius{
+    border-radius: 50%;
+}
+#img-radius:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+/*Footer*/
+
+#footer{
+    margin-bottom: 0px;
+}
