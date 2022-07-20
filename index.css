@@ -1,0 +1,111 @@
+html {
+    scroll-behavior: smooth;
+     }
+  
+     .navbar-expand-lg{
+      padding: 15px;
+     }
+      .view{
+        background-image: url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2ZmaWNlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80);
+        
+      }
+      .text-warning{
+        margin-top: 200px;
+        text-align: center;
+        opacity: 1;
+      }
+      .p{
+        margin-left: 504px;
+        margin-top: 35px;
+  
+      }
+      .btn{
+        margin: 30px;
+        margin-left: 500px;
+      }
+      .rounded-circle{
+        margin-top: -21px;
+        margin-left: 198px;
+      }
+      .text-center{
+        margin-top: 150px;
+        margin-bottom: 50px;
+      }
+      .WebDev{
+        margin-left: 291px;
+      }
+     
+      .rounded{
+        margin-top: 40px;
+        margin-left: 20px;
+      }
+      .border{
+        margin-block-start: 200px;
+        
+      }
+      .texth4{
+        color: orange;
+        margin-left: 20px ;
+      }
+     .textP{
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: white;
+        
+      }
+      .btn-link{
+        margin-left: 20px;
+        box-sizing: border-box;
+      }
+  
+      .rounded2{
+        display: flex;
+        flex-direction: row;
+        
+      }
+      .name{
+        position: absolute;
+        margin-top: -25px;
+        margin-left: 100px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-decoration: double;
+        text-transform: uppercase;
+        transition: transform 500ms ease-in-out;
+      }
+  
+      .name:hover{
+        background-color: orange;
+        transform: translate3d(100%);
+        animation: upp 2s ease-in-out backwards 1;
+      }
+  
+      @keyframes upp {
+       from{
+        opacity: 1;
+        line-height: 180px;
+        margin-top: -200px;
+        width: 250px;
+        border-top-right-radius: 50% ;
+        margin-left: 0px;
+        transform: translate3d(100%);
+       }
+       to{
+        opacity: 0.5;
+        line-height: 25px;
+        margin-top: -25px;
+        width: 250px;
+        border-top-right-radius: 30% ;
+        margin-left: 0px;
+        transform: translate3d(50%);
+       }
+      }
+      form{
+        margin-top: 160px;
+      }
+      footer{
+        padding: 20px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+      }
