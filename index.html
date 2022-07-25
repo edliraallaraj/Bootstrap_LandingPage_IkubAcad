@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: 'K2D', sans-serif;
+            padding-top: 30px;
+        }
+        .hover-fade img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-fade:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
+      filter: alpha(opacity=0.5);
+      opacity: 0.5;
+    }
+        #navbar{
+            background-color: rgb(255, 155, 4);
+        }
+        #home{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("https://www.clearcom.com/wp-content/uploads/2018/06/CC-Website-ResourcesDetail2-Banner-1920x300.png"); 
+background-position: center; 
+background-repeat: no-repeat; 
+background-size: cover;
+        }
+  
+
+        #p1{
+            color:rgb(255, 155, 4);
+        }
+        #btn1{
+            background-color:rgb(255, 155, 4) ; 
+            color: white; 
+        }
+    
+        #p2{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            color: rgb(255, 155, 4);
+        }
+        #img1{
+            border-radius: 100px;
+        }
+        #div4{
+             border-left:solid medium rgb(0, 155, 179);
+        }
+        #p3{
+            color: rgb(0, 155, 179);
+        }
+        #h1-1{
+            padding-top: 39px;
+            padding-bottom: 20px;
+            color: rgb(255, 155, 4);
+        }
+        #h1-2{
+            padding-top: 39px;
+            padding-bottom: 20px;
+            color: rgb(255, 155, 4);
+        }
+        .h1-2{
+            padding-top: 39px;
+            color: rgb(255, 155, 4);
+        }
+         .img2{
+            width: 97%;
+            height: 90%;
+        } 
+        .padding{
+            padding-top: 20px;
+        }
+        h2{
+            color: rgb(255, 155, 4);
+            padding-top: 50px;
+        }
+        #send{
+            width: 39%;
+        }
+        footer{
+            background-color: rgb(255, 155, 4);
+            height: 50px;
+            margin-bottom: 0;
+    
+        }
+        #copyright{
+            padding-top: 13px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: #fff;
+        }
+        #portfolio{
+            background-color: rgb(250, 248, 248);
+            
+        }
+        #team{
+            background-color: rgb(250, 248, 248);
+        }
+      .donaldo{
+        padding-bottom: 100px;
+      }
+      .blog{
+        padding-top: 50px;
+        padding-bottom: 90px;
+      }
+        .hover-zoomout a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-fade .img2 {
+      width: 97%;
+      height: 90%;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-fade:hover .img2 {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
+      filter: alpha(opacity=0.5);
+      opacity: 1;
+    }
+ 
+
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 110%;
+}
+.card:hover {
+  box-shadow: 8px 12px 31px -10px #ab98ab;
+}
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  transition: 1.5s ease;
+  height: 100%;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+  color: rgb(255, 155, 4);
+}
+.card:hover .card-body .card-title {
+  margin-bottom: .75rem;
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background-color: #fff;
+  transition: 1.5s ease;
+}
+.card-content {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 1.5s ease;
+}
+.card:hover .card-body {
+  height: 100%;
+}
+.card:hover .card-content {
+  bottom: 0;
+}
+.btn{
+    background-color: rgb(255, 155, 4);
+    color: white;
+}
+.intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+.intro p {
+  margin-bottom:0;
+}
+
+.people {
+  padding:50px 0;
+  cursor: pointer;
+}
+.item {
+  margin-bottom:30px;
+}
+
+.item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:280px;
+  position:relative;
+  overflow:hidden;
+}
+
+.item .cover {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgb(255, 155, 4);
+  transition:opacity 0.15s ease-in;
+  opacity:0;
+  padding-top:80px;
+  color:#fff;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
+}
+
+.item:hover .cover {
+  opacity:1;
+}
+
+.item .name {
+  font-weight:bold;
+  margin-bottom:8px;
+}
+
+.item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#bbd8fb;
+  letter-spacing:2px;
+  font-size:13px;
+  margin-bottom:20px;
+}
+
+.social {
+  font-size:18px;
+}
+ 
+.social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+.social a:hover {
+  opacity:1;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+           .row{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.col-3, .col-4, .col-5, .col-2, .col-6{
+  max-width: 100%;
+}
+.img2{
+  max-width: 100%;
+  height: 100%;
+}
+.card{
+ height: 300px;
+  max-width: 100%;
+}
+#img1{
+  width: 180px;
+height: 200px;
+
+padding-bottom: 5%;
+}
+#home{
+  padding-top: 100px;
+}}
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .row{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.col-3, .col-4, .col-5, .col-2, .col-6{
+  max-width: 100%;
+}
+.img2{
+  max-width: 100%;
+  height: 100%;
+}
+.card{
+ height: 300px;
+  width: 480px;
+}
+#img1{
+  width: 220px;
+height: 250px;
+
+padding-bottom: 5%;
+}
+#home{
+  padding-top: 60px;
+}
+.item .box{
+  height: 450px;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .row{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.col-3, .col-4, .col-5, .col-2, .col-6{
+  max-width: 100%;
+}
+.img2{
+  max-width: 100%;
+  height: 100%;
+}
+.card{
+ height: 400px;
+  width: 500px;
+}
+.une{
+  padding-left: 35%;
+padding-bottom: 10%;
+}
+#img1{
+  width: 250px;
+height: 300px;
+}
+#home{
+  padding-top: 60px;
+}
+.item .box{
+  height: 450px;
+  width: 450px;
+  
+}
+.item{
+  padding-left: 20%;
+}
+.card-wrapper{
+  padding-left: 15%;
+}
+#h1-2{
+  padding-left: 40%;
+}
+#h1-1{
+  padding-left: 35%;
+}
+.h1-2{
+  padding-left: 40%;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  #blog .row{
+    display: block;
+  }
+  .card{
+ height: 400px;
+  width: 540px;
+}
+.card-wrapper{
+  padding-left: 20%;
+}
+#h1-2{
+  padding-left: 130%;
+}
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav id="navbar" class="fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+            <a class="navbar-brand text-white" href="#home">Home</a></div>
+            <div class="col-5">
+        <ul class="nav nav-tabs">
+            
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#blog">Blog</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul></div></div></div>
+      </nav>
+    <div id="home" class="container-fluid">
+        <div class="row">
+            <div class="col-4"></div>
+        <div id="div2" class="col-4">
+<p id="p1" class="text-center h3">Hello, Welcome to my official website</p>
+<p class="text-center h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non beatae, atque id optio vitae similique? Culpa, necessitatibus veniam id earum, voluptatibus vero consequuntur sequi fuga ab eveniet temporibus, blanditiis optio?</p>
+</div><div class="col-4"></div></div>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+<button id="btn1" type="button" class="btn">See more</button>
+      </div><div class="col-4"></div></div></div>
+     <div id="about">
+      <div class="container">
+<div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+    <p id="p2" class="text-center h3">About me</p></div><div class="col-3"></div></div></div>
+    <div class="container donaldo">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2 hover-fade une">
+            <img id="img1" src="C:\Users\Donaldo\Desktop\une.webp"></div>
+        <div id="div4" class="col-4">
+    <p id="p3" class="h4">Donaldo Duro</p>
+    <p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet earum, dignissimos iusto voluptate perferendis reiciendis aut rerum nesciunt hic at magnam soluta impedit. Nemo cupiditate reprehenderit inventore, deserunt distinctio molestias.</p>
+      </div><div class="col-2"></div></div></div></div>
+      <div id="portfolio">
+      <div class="container">
+        <div class="row">
+            <div class="col-5"></div>
+                <div class="col-4"><h1 id="h1-1">Portfolio</h1></div>
+                    <div class="col-3"></div>
+                </div>
+            <div class="row">
+            <div class="col-4 hover-fade padding">
+                
+                <img src="https://static.wixstatic.com/media/ea6ac8_b6b0cbe25615488e855f515846354dda~mv2.jpg/v1/fill/w_924,h_607,al_c,q_90/ea6ac8_b6b0cbe25615488e855f515846354dda~mv2.jpg" class="img2">
+            </div>
+       
+        <div class="col-4 hover-fade padding">
+            
+            <img src="https://fireart.studio/wp-content/uploads/2020/09/screenshot-1058-1.jpg" class="img2">
+        </div>
+        <div class="col-4 hover-fade padding">
+            
+            <img src="http://www.onextrapixel.com/wp-content/uploads/2014/06/Christchurch-Harbour-Hotel.jpg" class="img2">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 hover-fade padding">
+            
+            <img src="https://static.wixstatic.com/media/ea6ac8_b6b0cbe25615488e855f515846354dda~mv2.jpg/v1/fill/w_924,h_607,al_c,q_90/ea6ac8_b6b0cbe25615488e855f515846354dda~mv2.jpg" class="img2">
+        </div>
+   
+    <div class="col-4 hover-fade padding">
+        
+        <img src="https://fireart.studio/wp-content/uploads/2020/09/screenshot-1058-1.jpg" class="img2">
+    </div>
+    <div class="col-4 hover-fade padding">
+        
+        <img src="http://www.onextrapixel.com/wp-content/uploads/2014/06/Christchurch-Harbour-Hotel.jpg" class="img2">
+    </div>
+</div>
+</div></div>
+<div id="blog">
+<div class="container blog">
+    <div class="row">
+      <div class="col-5">
+      </div>
+      <div class="col-4"><h1 id="h1-2">Blog</h1></div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row">
+      <div class="card-wrapper col-4">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Post Title</h3>
+            <div class="card-content">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique eos eaque, repellat eveniet, tempore dolor animi saepe quae aut quaerat voluptatibus eligendi quam perferendis, qui incidunt numquam error! Similique, impedit.</p>
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-4">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="https://media.istockphoto.com/photos/taj-mahal-mausoleum-in-agra-picture-id1146517111?k=20&m=1146517111&s=612x612&w=0&h=vHWfu6TE0R5rG6DJkV42Jxr49aEsLN0ML-ihvtim8kk=" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Post Title</h3>
+            <div class="card-content">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore accusantium modi odio? Architecto ab debitis dignissimos atque possimus dicta perferendis praesentium labore temporibus nulla, reiciendis porro consequuntur!</p>
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-wrapper col-4">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="data:image/jpeg;base64,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" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Post Title</h3>
+            <div class="card-content">
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime repellat molestiae consequatur provident quibusdam blanditiis et cumque ullam debitis dolor repudiandae saepe accusamus nam, iusto ipsum enim! Velit, magnam similique?</p>
+              <a href="#" class="btn">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  <div id="team">
+  <div class="container">
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-4"><h1 class="h1-2">Our Team</h1></div>
+        <div class="col-3"></div>
+    
+</div>
+  </div>
+  
+    <div class="container">
+        <div class="row people justify-content-center">
+            <div class="col-3 item">
+                <div class="box" style="background-image:url(https://japanpowered.com/media/images//goku.png)">
+                    <div class="cover">
+                        <h3 class="name">Goku</h3>
+                        <p class="title">Android Developer</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 item">
+                <div class="box" style="background-image:url(https://static.wikia.nocookie.net/dragonballfighterz/images/9/90/Vegeta_%28SSGSS%29_Artwork.png/revision/latest/top-crop/width/360/height/450?cb=20180902173750)">
+                    <div class="cover">
+                        <h3 class="name">Vegeta</h3>
+                        <p class="title">FrontEnd Developer</p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 item">
+                <div class="box" style="background-image:url(https://static.wikia.nocookie.net/cartoon-characters8569/images/d/dd/Rick.png/revision/latest?cb=20170109163903)">
+                    <div class="cover">
+                        <h3 class="name">Rick</h3>
+                        <p class="title">BackEnd Developer</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 item">
+                <div class="box" style="background-image:url(https://static.wikia.nocookie.net/rickandmorty/images/e/ee/Morty501.png/revision/latest?cb=20210827150137)">
+                    <div class="cover">
+                        <h3 class="name">Morty</h3>
+                        <p class="title">Business Analyst</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+<br>
+<br>
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3"><h2>Get in Touch</h2></div>
+        <div class="col-6"><form action="">
+            <input type="text" placeholder="Your Name"><br><br>
+            <input type="email" placeholder="youremail@email.com"><br><br>
+            <textarea cols="21" rows="2"></textarea><br>
+            <button class="btn" id="send">Send</button>
+        </form></div>
+    </div>
+</div></div><br><br><br>
+<footer>
+    <p id="copyright">Copyright Donaldo Duro (Front End Developer).</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
