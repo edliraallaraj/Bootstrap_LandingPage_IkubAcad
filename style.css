@@ -1,0 +1,179 @@
+
+
+body {
+    font-family: verdana;
+   
+}
+
+
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #e9b085, #d86514);
+}
+
+.nav li {
+    padding: 0 10px;
+
+}
+
+.nav li a {
+    color: #fff !important;
+    font-weight: 600;
+
+
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 30px !important;
+}
+
+.navbar-toggler {
+    outline: none !important;
+}
+
+#home {
+    background-image: linear-gradient(to right, #e9b085, #d86514);
+    color: #fff;
+    padding-top: 5%;
+
+}
+
+.tittle {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.w-img {
+    width: 100%;
+}
+
+/* ---  about us --- */
+.title2{
+    font-size: 40px;
+}
+.title2::before {
+    content: '';
+    background: #d86514;
+    height: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   
+}
+
+#about-us {
+    background: #f8f6f2;
+    padding-bottom: 400px;
+    padding-top: 45px;
+}
+
+ #about-us ul li {
+    
+    padding: 5px;
+    font-size: 20px ;
+} 
+#about-us ul {
+    margin-left:50px;
+}
+.title-p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 8%;
+    margin-left: 50px;
+}
+
+.aboutus-img{
+    width: auto;
+    height: 300px;
+    margin-left: 80px;
+    margin-top: 8%;
+}
+/* --- portfolio--- */
+#portfolio {
+    margin: 100px 0;
+}
+
+.protfolio {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.protfolio img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-left: 130px;
+}
+
+/*  --- team---- */
+#team {
+    padding: 10px 0;
+    background-color: rgba(128, 170, 128, 0.133);
+}
+
+.team {
+    padding: 10px;
+
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+
+/* Contact us  */
+#contact-us {
+    background-color: rgba(25, 26, 25, 0.133);
+    padding: 100px 0;
+    margin-top: 400px;
+}
+
+#contact-us p {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.social-img img {
+    width: 60px;
+    transition: 0.5s;
+}
+
+.social-img a:hover img {
+    transform: translate(12px, 50%);
+}
+
+.form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 50px;
+    background: #ffffff;
+    border: 10px solid #f2f2f2;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+/* ----footer---- */
+.footer {
+    background-color: #d86514;
+    text-align: center;
+
+}
