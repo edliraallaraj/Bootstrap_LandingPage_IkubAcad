@@ -1,13 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
-    <title>Document</title>
-    <script src="detyra.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Giljana Limani</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/giljana-limani-357971137/">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bit.ly/2Rt5XdH">Projects</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <body>
-    <h2>First Exercise JS</h2>
+    <div class="bg-image" id="bg-image"></div>
+    <div class="roze">
+        <h1>Mirësvini ne website</h1>
+        <p>Computer Scientist working with professional projects with different
+            companies around the world like: Germany, Estonia, USA, France, Canada during years of
+            work experiences, also working through personal projects as a freelancer.</p>
+
+
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-35.png" height="150px" width="150px" alt="" />
+                <h2>HTML</h2>
+                <p>HTML është gjuha standarde për të përshkruar strukturën e faqeve të internetit.
+                    Udhëzimet tona HTML do t'ju ndihmojnë të kuptoni bazat e gjuhës më të fundit HTML5,
+                    në mënyrë që të krijoni website-n tuaj. Ndiqni linkun tone per te mesuar me shume</p>
+                <p> <a href="https://www.tutorialrepublic.com/html-tutorial/" class="btn">Learn More
+                        &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-6.png" height="150px" width="150px" alt="" />
+                <h2>CSS</h2>
+                <p> CSS përdoret për të përshkruar prezantimin e faqeve të internetit.
+                    CSS mund të kursejë shumë kohë dhe përpjekje.
+                    Udhëzimet tona CSS do t'ju ndihmojnë të mësoni gjërat thelbësore të versionit më të fundit,
+                    që të kontrolloni paraqitjen e faqes suaj të internetit.</p>
+                <a href="https://www.tutorialrepublic.com/css-tutorial/" class="btn">Learn More &raquo;</a>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-22.png" height="150px" width="150px" alt="" />
+                <h2>JavaScript</h2>
+                <p>JavaScript është gjuha më popullore dhe e përdorur client-side.
+                    Udhëzuesit tanë JavaScript do të ofrojnë njohuri të thelluara të JavaScript-it,
+                    duke përfshirë veçoritë ES6, në mënyrë që të mund të krijoni faqe interneti interaktive.
+                    Ndiqni linkun tone per te mesuar me shume</p>
+                <p> <a href="#" class="btn">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-2.png" height="150px" width="150px" alt="" />
+                <h2>Bootstrap</h2>
+                <p>Bootstrap është një framework i fuqishem front-end për zhvillim më të shpejtë
+                    dhe më të lehtë të webit. Udhëzimet tona të Bootstrap do t'ju ndihmojnë të mësoni
+                    të gjitha veçoritë e framework-ut më të fundit të Bootstrap 4
+                    që të krijoni lehtësisht faqe interneti.</p>
+                <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                        class="btn">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-43.png" height="150px" width="150px" alt="" />
+                <h2>PHP</h2>
+                <p>PHP është gjuha më e njohur e skriptimit server-side për krijimin e faqeve dinamike të internetit.
+                    Udhëzimet tona PHP do t'ju ndihmojnë të mësoni të gjitha veçoritë e gjuhës më të fundit të
+                    skriptimit
+                    PHP7,
+                    në mënyrë që të krijoni lehtësisht faqe interneti dinamike.</p>
+                <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                        class="btn">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-19.png" height="150px" width="150px" alt="" />
+                <h2>SQL</h2>
+                <p>SQL është një gjuhë standarde e krijuar për menaxhimin e të dhënave në sistemin e menaxhimit të bazës
+                    së të dhënave relacionale. Udhëzimet tona SQL do t'ju ndihmojnë të mësoni bazat e gjuhës SQL
+                    në mënyrë që të mund të menaxhoni sa me mire të dhënat tuaja.</p>
+                <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                        class="btn">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-31.png" height="150px" width="150px" alt="" />
+                <h2>References</h2>
+                <p>Seksioni ynë i referencave përshkruan të gjitha etiketat standarde HTML5 dhe vetitë e CSS3
+                    së bashku me referenca të tjera të dobishme si emrat, vlerat e ngjyrave, entitetet e karaktereve,
+                    fontet e sigurta në web, kodet e gjuhës, mesazhet HTTP dhe më shumë.</p>
+                <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                        class="btn">Learn More &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <img src="img/Saly-42.png" height="150px" width="150px" alt="" />
+                <h2>FAQ</h2>
+                <p>Seksioni ynë Pyetjet e bëra më shpesh (FAQ) është një koleksion i gjerë i FAQ-ve
+                    që ofron zgjidhje të shpejta dhe funksionale të pyetjeve të zakonshme që lidhen me dizajnimin
+                    dhe zhvillimin e webit me demonstrim të drejtpërdrejtë. Na kontaktoni per me teper </p>
+                <p><a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank"
+                        class="btn">Learn More &raquo;</a></p>
+            </div>
+        </div>
+
+        <!-- <div class="butoni">
+            <a href="#" class="btn"><span>Button</span></a>
+        </div> -->
+    </div>
+
+    <div class="container-fluid"></div>
+
+    <!--Second Part-->
+    <div class="roze">
+        <div class="jumbotron">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">15 burime online falas ku mund të mësoni programimin</h1>
+                <p class="lead my-3">Sapo kemi hyrë në vitin 2022 dhe është koha që këto ditë të mendojmë se çfarë
+                    dëshirojmë të bëjmë në këtë vit, se kujt do ti përkushtohemi më shumë e kujt më pak.</p>
+                <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+            </div>
+        </div>
+
+
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Programimi. <p class="text-muted"> 10 Arsye per ta mesuar.</p>
+                </h2>
+                <p class="lead"> Steve Jobs dikur tha: "Unë mendoj se të gjithë në këtë vend duhet të mësojnë se si të
+                    programojnë
+                    një kompjuter, sepse ju mëson se si të mendoni". </br>
+                    Nëse doni të përmirësoni perspektivat tuaja të punës ose thjesht dëshironi të kuptoni më shumë </br>
+                    se si punojnë kompjutera, mësimi i një gjuhe programimi është një mënyrë e shkëlqyer për të
+                    përmirësuar
+                    aftësitë tuaja. </br> </br> </br>
+
+                    <a href="https://www.linkedin.com/pulse/10-arsyet-pse-duhet-t%C3%AB-m%C3%ABsoni-n%C3%AB-s%C3%AB-paku-nj%C3%AB-gjuhe-gologic-center/"
+                        class="text-secondary" target="_blank">Lexo me shume</a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="img/developer.jpg" height="150px" width="350px"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Profesionet te ardhmes. <p class="text-muted">Cilat jane ato.</p>
+                </h2>
+                <p class="lead">Vendet e reja të punës do të ndikojnë pozitivisht në çështjen e punësimit </br>
+                    Besohet se deri në 75 milionë punë aktuale do të ndryshohen në mënyrë që detyrat e punës të ndahen
+                    mes
+                    njerëzve, makinerive dhe algoritmeve. </br>
+                    Profesionet të cilat janë dukë kërkuar më shumë përfshijnë rolet siç janë analistët e të dhënave,
+                    programuesit e softuerëve dhe aplikacioneve dhe ekspertët për
+                    tregtinë elektronike dhe rrjetet sociale
+                    </br> </br> </br>
+
+                    <a href="https://www.britishcouncil.al/programmes/education/21st-century-schools/why/jobs-for-future"
+                        class="text-secondary" target="_blank">Lexo me shume</a>
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="img/developer2.jpg" height="150px" width="350px"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Rrjetet sociale <p class="text-muted">Dy anet e tyre.</p>
+                </h2>
+                <p class="lead"> Rrjetet sociale në kohët moderne, konsiderohen si pjesë e angazhimeve dhe jetës së
+                    përditshme.</br>
+                    Jo rrallë, është trajtuar çështja nëse këto rrjete janë me të vërtetë sociale apo asociale,
+                    sidomos te të rinjtë, por secili ka interpretuar në formën dhe mënyrën e vet,
+                    që kryesisht niset nga qëllimi për çka dhe sa kohë përdoren ato nga të rinjtë.
+                    Sipas psikologes Mira Gashi Aziri, i gjithë problemi bazohet se për çfarë arsye përdoren këto
+                    rrjete.
+                    </br> </br> </br>
+
+                    <a href="https://www.evropaelire.org/a/dy-anet-e-rrjeteve-sociale-/30214059.html"
+                        class="text-secondary" target="_blank">Lexo me shume</a>
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="img/social.jpg" height="150px" width="350px"
+                    alt="Generic placeholder image">
+            </div>
+        </div>
+        <hr>
+        <!-- Reviewt e te njohurve-->
+        <h1>Përshtypjet</h1>
+    </div>
+
+    <div class="test">
+
+        <div class="testemonial-container">
+            <img class="use"
+                src="https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png"
+                alt="user-image">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis architecto minima
+                tenetur itatibus ratione minima perferendis explicabo modi!</p>
+            <h4 class="username">Clinet 1</h4>
+        </div>
+    </div>
+    <div class="roze">
+        <footer style="background-color:#676767">
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="color: white; padding:5px">Copyright © 2022 Giljana Limani</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <span></span>
+    <script src="index.js"></script>
+
+
+
 </body>
+
 </html>

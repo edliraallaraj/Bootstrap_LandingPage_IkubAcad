@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+    
+}
+
+.header-font{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.row{
+    padding-top: 25px;
+
+}
+
+.bg-image{
+    width: 100%;
+    height: 60vh;
+    background: url("/img/watercolor-patterned-banner-2021-09-02-06-42-12-utc.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.roze{
+    padding: 50px 100px;
+    
+}
+.test{
+    padding: 30px 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+h1{
+font-size: 50px;
+}
+p{
+    color: grey;
+}
+
+/*Second Section*/
+
+.container-fluid{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+  background-color: #dbb39e;
+  font-family: "Permanent Marker", cursive;
+}
+
+/*Butoni*/
+
+.butoni{
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  
+}
+
+.btn {
+    background-color: #f3c4a8;
+    padding: 20px 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(252, 89, 219, 0.218);
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+  }
+  
+  .btn:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+
+
+/**/
+.p-5{
+
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 25px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    padding-bottom: 0 !important;
+}
+
+.jumbotron{
+  
+    background-color: #cccccc; /* Used if the image is unavailable */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/watercolor-patterned-banner-2021-09-02-05-58-57-utc.jpg");
+	background-size: cover;
+	background-position: center center;
+    color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 25px;
+    
+}
+p.lead.my-3 {
+    color: white;
+}
+
+
+/*Hearts Over*/
+
+span{
+    background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-512.png");
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate 6s linear;
+}
+@keyframes animate {
+    0% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      filter: hue-rotate(0);
+    }
+    100% {
+      transform: translate(-50%, -5000%);
+      opacity: 0;
+      filter: hue-rotate(720deg);
+    }
+  }
+
+  /*Review section*/
+
+img.use{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+   transform: translateX(-50%);
+   top: -50px;
+}
+.username{
+    font-size: 13px;
+    font-weight: 100;
+}
+.testemonial-container{
+    width: 500px;
+    height: 200px;
+    background-color: #f4e5d7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    min-width: 400px;
+    padding: 70px 20px;
+    margin: 5px;
+    color: grey;
+    position: relative;
+
+}
+/*Media Query*/
+
+@media(max-width:500px){
+    .container{
+        padding: 10px;
+    }
+}
