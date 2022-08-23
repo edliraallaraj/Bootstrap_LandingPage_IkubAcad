@@ -1,0 +1,220 @@
+.logo {
+    width: 200px;
+}
+
+#nav-bar {
+    position: static;
+    top: 0;
+    height: fit-content;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, rgb(142, 178, 184), rgb(23, 190, 231));
+}
+
+
+body {
+    font-family: "Sora", Verdana;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-4 {
+    color: orangered;
+    font-weight: 700;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: aliceblue !important;
+
+}
+
+.navbar-nav li a:hover {
+    background: rgb(87, 179, 122);
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 20%;
+}
+
+.home {
+    background-image: url("IMG/home-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+ .home::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+    opacity: 0.5;
+} 
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+    box-shadow: 10px 5px 5px blanchedalmond;
+    background-color: whitesmoke;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: black;
+    transform: translate(12px);
+}
+
+.iconbox {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(95, 188, 204);
+    font-size: 20px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+.aboutUs {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.aboutUs::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.aboutUs:hover .iconbox {
+    background-color: white;
+}
+
+.aboutUs:hover h5,
+.aboutUs:hover p {
+    color: rgb(95, 188, 204);
+}
+
+.aboutUse:hover::after {
+    opacity: 0.5;
+    top: 0;
+}
+
+#books {
+    background-color: rgb(229, 240, 236);
+    opacity: 0.8;
+}
+
+.books img {
+    width: auto;
+    height: 50%;
+    transition: all 0.4s ease;
+}
+
+.books:hover .overlay {
+    opacity: 1;
+}
+
+.books:hover img {
+    transform: scale(1.1);
+}
+
+.team-member img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+
+.blog-post img {
+    width: 350px;
+    height: 250px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    transition: all 0.4s ease;
+}
+
+.social-icons a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+form input.form-control {
+    height: 50px;
+}
+
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: rgba(133, 130, 130, 0.767);
+}
+
+.footer-top a {
+    color: antiquewhite;
+}
+
+.footer-top a:hover {
+    color: white;
+    font-size: large;
+}
+
+.footer-bottom {
+    background-color: #242933;
+    color: aqua;
+    text-align: center;
+}
