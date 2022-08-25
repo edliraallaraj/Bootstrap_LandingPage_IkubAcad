@@ -1,0 +1,47 @@
+
+#sidebar-wrapper {
+    margin-left: -70px;
+    margin-top: -17px;
+    left: 70px;
+    width: 125px;
+    background: #212529;
+    height: 682px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.295);
+}
+.fa-house , .fa-person , .fa-clapperboard , .fa-money-check ,.fa-film{
+  font-size: 30px;
+  color: orange;
+  margin-top: 20px;
+}
+.text-uppercase{
+  text-decoration: wavy;
+}
+ .video{
+  width: 95%;
+  margin-top: 0px;
+  margin-left: 10px;
+  height: auto;
+}
+.description_Movie{
+  margin-left: -10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.295);
+}
+.rreklama{
+  margin-top: 50px;
+  width: 400px;
+  height: 200px;
+  margin-left: 20px;
+}
+.footer{
+    background-color: #212529;
+    padding: 40px;
+  }
+  .footerIcons{
+    color: white;
+    margin: 5px;
+    margin-left: 12%;
+    
+  }

@@ -1,0 +1,138 @@
+.bg-light{
+    margin-top: 50px;
+}
+.rounded{
+    height: 350px;
+    width: 250px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.rounded:hover{
+    box-sizing: border-box;
+    border: 15px solid orange;
+    transition: 300ms;
+}
+.rounded::after:checked{
+    box-sizing: border-box;
+    border: 15px solid orange;
+    transition: 300ms;
+}
+.movie_describtion{
+    margin-top: 50px;
+}
+.underImage{
+    margin-top: 35px;
+}
+.text-capitalize {
+    margin-top: 30px;
+}
+
+.chair{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.abc{
+    display: grid;
+    position: absolute;
+}
+
+.alf{
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: rgb(57, 57, 57);
+}
+
+.sitesget, .sitesget2 ,.sitesget3,
+.sitesget4 ,.sitesget5, .sitesget6,
+.sitesget7 ,.sitesget8 ,.sitesget9,
+.sitesget10 , .sitesget11 , .sitesget12,
+.sitesget13, .sitesget14,.sitesget15,
+.sitesget16,.sitesget17 , .sitesget18,
+.sitesget19 , .sitesget20{
+display: flex;
+flex-direction: row;
+margin-left: 40px;
+}
+
+
+.conteiner, .conteiner2, .conteiner3 , 
+.conteiner6 , .conteiner9, .conteiner12, 
+.conteiner15,.conteiner18{
+display: flex;
+flex-direction: row;
+}
+
+.conteiner4 , .conteiner7 , .conteiner10 ,
+.conteiner13,.conteiner16 , .conteiner19{
+    margin-top: 15px;
+margin-top: -50px;
+margin-left: 288px;
+display: inline-flex;
+}
+
+.conteiner5 , .conteiner8 , .conteiner11,
+.conteiner14, .conteiner17, .conteiner20{
+margin-top: -50px;
+margin-left: 768px;
+display: inline-flex;
+}
+
+input[type="checkbox"]{
+height: 30px;
+width: 30px;
+color: orange;
+cursor: pointer;
+display: flex;
+flex-direction: row;
+border: 2px solid orange;
+}
+input[type="checkbox"]:checked+label{
+color: white;
+background-color: rgb(237, 161, 19);
+}
+
+.c1, .c2 , .c3 , .c4, .c5 ,.c6 ,.c7 ,.c8,
+.c9, .c10 , .c11 ,.c12 , .c13 , .c14 , .c15 ,
+.c16 , .c17 ,.c18 ,.c19 , .c20    {
+display: flex;
+flex-direction: row;
+font-size: 20px;
+margin: 20px;
+cursor: pointer;
+background: rgb(255, 255, 255);
+height: 27px;
+width: 27px;
+margin-left: -29px;
+margin-top: 1px;
+color: rgb(255, 191, 0);
+}
+
+.c1:hover , .c2:hover , .c3:hover , .c4:hover ,
+.c5:hover , .c6:hover , .c7:hover , .c8:hover ,
+.c9:hover , .c10:hover , .c11:hover , .c12:hover,
+.c13:hover , .c14:hover ,.c15:hover ,.c16:hover,
+.c17:hover ,.c18:hover, .c19:hover , .c20:hover {
+background-color: orange;
+color: white;
+}
+.form{
+    margin-bottom: 100px;
+}
+.ticket{
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: black 0px 2px 5px,
+                black 0px 2px 5px;
+}
+.footer{
+    margin-top: 50px;
+    background-color: #1d2025;
+    padding: 40px;
+  }
+  .footerIcons{
+    color: white;
+    margin: 5px;
+    text-align: center;
+  }

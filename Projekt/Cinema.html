@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Reserve</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Cinema.css">
+</head>    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-static/">
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="nav-link text-white nav-title text-uppercase" href="MovieTime.html">movietime</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link disabled text-warning text-uppercase" href="#AboutUs">Watch onnly in movie time </a>
+             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="SignInForm.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-uppercase" href="RegistForm.html">regist</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0" id="Form">
+            <input class="form-control mr-sm-2" type="text" id="Search" placeholder="Search" name="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0"  onclick="SearchEngine()" >Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <!-- Movies -->
+      <div class="container bg-light">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded" src="https://i0.wp.com/batman-news.com/wp-content/uploads/2022/01/The-Batman-2022-Movie-Poster-01.jpeg?fit=2764%2C4096&quality=80&strip=info&ssl=1" onclick="CinemaMovie1()">
+                <label class="text-uppercase text-warning underImage">the movie is released in cinemas on :</label>
+                <p id="data1" class="text-secondary"></p>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-uppercase text-warning  movie_describtion" id="CinemaMovie1"> </h3>
+                <h5 class="text-uppercase text-warning">description</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias at voluptas quam ratione a rerum maiores sed ad commodi! Ad maxime id necessitatibus minus obcaecati, quam architecto. Quia, labore!</p>
+                <h5 class="text-uppercase text-warning">actors</h5>
+                <p class="text-secondary" id="ActorMovie1"></p>
+                <h5 class="text-uppercase text-warning">Genre</h5>
+                <p class="text-secondary " id="GenreMovie1"></p>
+                <h5 class="text-uppercase text-warning">evaluation</h5>
+                <p class="text-success" id="evaluationMOVIE1"></p>
+                <h5 class="text-uppercase text-warning">duration time</h5>
+                <p class="text-secondary" id="timeMovie1"></p>
+            </div>
+        </div>
+        <hr style="border: 1px solid grey;">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded" src="https://m.media-amazon.com/images/M/MV5BMzdmM2JiNWQtYjE0ZS00NmMxLThiMTItNzUxNzQ5NjJjZDI2XkEyXkFqcGdeQXVyMzQwMTY2Nzk@._V1_FMjpg_UX1000_.jpg" onclick="CinemaMovie2()">
+                <label class="text-uppercase text-warning underImage">the movie is released in cinemas on :</label>
+                <p id="data2" class="text-secondary"></p>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-uppercase text-warning  movie_describtion" id="CinemaMovie2"> /h3>
+                <h5 class="text-uppercase text-warning">description</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias at voluptas quam ratione a rerum maiores sed ad commodi! Ad maxime id necessitatibus minus obcaecati, quam architecto. Quia, labore!</p>
+                <h5 class="text-uppercase text-warning">actors</h5>
+                <p class="text-secondary" id="ActorMovie2" ></p>
+                <h5 class="text-uppercase text-warning">Genre</h5>
+                <p class="text-secondary Genre" id="GenreMovie2"></p>
+                <h5 class="text-uppercase text-warning">evaluation</h5>
+                <p class="text-success" id="evaluationMOVIE2"></p>
+                <h5 class="text-uppercase text-warning">duration time</h5>
+                <p class="text-secondary" id="timeMovie2"></p>
+            </div>
+        </div>
+        <hr style="border: 1px solid grey;">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded" src="https://m.media-amazon.com/images/M/MV5BMmIwYzFhODAtY2I1YS00ZDdmLTkyYWQtZjI5NDIwMDc2MjEyXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" onclick="CinemaMovie3()">
+                <label class="text-uppercase text-warning underImage">the movie is released in cinemas on :</label>
+                <p id="data3" class="text-secondary"></p>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-uppercase text-warning  movie_describtion" id="CinemaMovie3"> </h3>
+                <h5 class="text-uppercase text-warning">description</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias at voluptas quam ratione a rerum maiores sed ad commodi! Ad maxime id necessitatibus minus obcaecati, quam architecto. Quia, labore!</p>
+                <h5 class="text-uppercase text-warning">actors</h5>
+                <p class="text-secondary" id="ActorMovie3"></p>
+                <h5 class="text-uppercase text-warning">Genre</h5>
+                <p class="text-secondary " id="GenreMovie3"></p>
+                <h5 class="text-uppercase text-warning">evaluation</h5>
+                <p class="text-success" id="evaluationMOVIE3"></p>
+                <h5 class="text-uppercase text-warning">duration time</h5>
+                <p class="text-secondary" id="timeMovie3"></p>
+            </div>
+        </div>
+        <hr style="border: 1px solid grey;">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded" src="https://images.squarespace-cdn.com/content/v1/5bc7a672d745626e1e665610/1635803647082-FZK1C6IPMBA0DHVG27GS/634B6D3F-7816-46C5-A5C0-BC2179C6ACDE.jpg" onclick="CinemaMovie4()">
+                <label class="text-uppercase text-warning underImage">the movie is released in cinemas on :</label>
+                <p id="data4" class="text-secondary" ></p>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-uppercase text-warning  movie_describtion" id="CinemaMovie4"> </h3>
+                <h5 class="text-uppercase text-warning">description</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias at voluptas quam ratione a rerum maiores sed ad commodi! Ad maxime id necessitatibus minus obcaecati, quam architecto. Quia, labore!</p>
+                <h5 class="text-uppercase text-warning">actors</h5>
+                <p class="text-secondary" id="ActorMovie4"></p>
+                <h5 class="text-uppercase text-warning">Genre</h5>
+                <p class="text-secondary " id="GenreMovie4"></p>
+                <h5 class="text-uppercase text-warning">evaluation</h5>
+                <p class="text-success" id="evaluationMOVIE4"></p>
+                <h5 class="text-uppercase text-warning">duration time</h5>
+                <p class="text-secondary" id="timeMovie4"></p>
+            </div>
+        </div>
+        <hr style="border: 1px solid grey;">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded" src="https://wwwflickeringmythc3c8f7.zapwp.com/q:i/r:1/wp:1/w:362/u:https://cdn.flickeringmyth.com/wp-content/uploads/2022/04/Monstrous-poster-600x889.jpg" onclick="CinemaMovie5()">
+                <label class="text-uppercase text-warning underImage">the movie is released in cinemas on :</label>
+                <p id="data5" class="text-secondary"></p>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="text-uppercase text-warning  movie_describtion" id="CinemaMovie5"> </h3>
+                <h5 class="text-uppercase text-warning">description</h5>
+                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, alias at voluptas quam ratione a rerum maiores sed ad commodi! Ad maxime id necessitatibus minus obcaecati, quam architecto. Quia, labore!</p>
+                <h5 class="text-uppercase text-warning">actors</h5>
+                <p class="text-secondary" id="ActorMovie5"></p>
+                <h5 class="text-uppercase text-warning">Genre</h5>
+                <p class="text-secondary " id="GenreMovie5"></p>
+                <h5 class="text-uppercase text-warning">evaluation</h5>
+                <p class="text-success" id="evaluationMOVIE5"></p>
+                <h5 class="text-uppercase text-warning">duration time</h5>
+                <p class="text-secondary" id="timeMovie5"></p>
+            </div>
+        </div>
+      </div>
+
+      <h1 class="text-warning text-capitalize text-center">select your seat</h1>
+
+   <div class="container chair">
+    <div class="row">
+        <div class="col">
+            
+      <div class="container chairNumber bg-white">
+        <div class="abc">
+            <label class="alf">&#65;</label>
+            <label class="alf">&#66;</label>
+            <label class="alf">&#67;</label>
+            <label class="alf">&#68;</label>
+            <label class="alf">&#69;</label>
+            <label class="alf">&#70;</label>
+            <label class="alf">&#71;</label>
+            <label class="alf">&#72;</label>
+        </div>
+         <!-- Rreshti i karrigeve te A-->
+         
+        <div class="sitesget">
+        <div class="conteiner">
+        <input type="checkbox" name="sit"   id="sit" onclick="Site()" class="design" > <label for="sit" class="c1">  1 </label>
+        <input type="checkbox" name="sit1"  id="sit1" onclick="Site2()"> <label for="sit1" class="c1" > &#50; </label>
+        <input type="checkbox" name="sit2"  id="sit2" onclick="Site3()"> <label for="sit2" class="c1"> &#51; </label>
+        <input type="checkbox" name="sit3"  id="sit3" onclick="Site4()"> <label for="sit3" class="c1"> &#52; </label>
+        <input type="checkbox" name="sit4"  id="sit4" onclick="Site5()"> <label for="sit4" class="c1"> &#53; </label>
+        <input type="checkbox" name="sit5"  id="sit5" onclick="Site6()"> <label for="sit5" class="c1"> &#54; </label>
+        <input type="checkbox" name="sit6"  id="sit6" onclick="Site()"> <label for="sit6" class="c1"> &#55; </label>
+        <input type="checkbox" name="sit7"  id="sit7" onclick="Site()"> <label for="sit7" class="c1"> &#56; </label>
+        <input type="checkbox" name="sit8"  id="sit8" onclick="Site()"> <label for="sit8" class="c1"> &#57; </label>
+        <input type="checkbox" name="sit9"  id="sit9" onclick="Site()"> <label for="sit9" class="c1"> &#49;&#48; </label>
+        <input type="checkbox" name="sit10"  id="sit10" onclick="Site()"> <label for="sit10" class="c1"> &#49;&#49; </label>
+        <input type="checkbox" name="sit11"  id="sit11" onclick="Site()"> <label for="sit11" class="c1"> &#49;&#50;</label>
+        <input type="checkbox" name="sit12"  id="sit12" onclick="Site()">  <label for="sit12" class="c1"> &#49;&#51; </label>
+        <input type="checkbox" name="sit13"  id="sit13" onclick="Site()"> <label for="sit13" class="c1"> &#49;&#52; </label>
+        <input type="checkbox" name="sit14"  id="sit14" onclick="Site()"> <label for="sit14" class="c1"> &#49;&#53; </label>
+        <input type="checkbox" name="sit15"  id="sit15" onclick="Site()"> <label for="sit15" class="c1"> &#49;&#54; </label>
+        <input type="checkbox" name="sit16"  id="sit16" onclick="Site()"> <label for="sit16" class="c1"> &#49;&#55; </label>
+        <input type="checkbox" name="sit17"  id="sit17" onclick="Site()"> <label for="sit17" class="c1"> &#49;&#56; </label>
+        <input type="checkbox" name="sit18"  id="sit18" onclick="Site()"> <label for="sit18" class="c1"> &#49;&#57; </label>
+        <input type="checkbox" name="sit19"  id="sit19" onclick="Site()"> <label for="sit19" class="c1"> &#50;&#48; </label>
+       
+        </div></div>
+         <!-- Rreshti i karrigeve te B-->
+        <div class="sitesget2">
+            <div class="conteiner2">
+            <input type="checkbox" name="1sit"   id="1sit">  <label for="1sit" class="c2">  &#49; </label>
+            <input type="checkbox" name="1sit1"  id="1sit1"> <label for="1sit1" class="c2"> &#50; </label>
+            <input type="checkbox" name="1sit2"  id="1sit2"> <label for="1sit2" class="c2"> &#51; </label>
+            <input type="checkbox" name="1sit3"  id="1sit3"> <label for="1sit3" class="c2"> &#52; </label>
+            <input type="checkbox" name="1sit4"  id="1sit4"> <label for="1sit4" class="c2"> &#53; </label>
+            <input type="checkbox" name="1sit5"  id="1sit5"> <label for="1sit5" class="c2"> &#54; </label>
+            <input type="checkbox" name="1sit6"  id="1sit6"> <label for="1sit6" class="c2"> &#55; </label>
+            <input type="checkbox" name="1sit7"  id="1sit7"> <label for="1sit7" class="c2"> &#56; </label>
+            <input type="checkbox" name="1sit8"  id="1sit8"> <label for="1sit8" class="c2"> &#57; </label>
+            <input type="checkbox" name="1sit9"  id="1sit9"> <label for="1sit9" class="c2"> &#49;&#48; </label>
+            <input type="checkbox" name="1sit10"  id="1sit10"> <label for="1sit10" class="c2"> &#49;&#49; </label>
+            <input type="checkbox" name="1sit11"  id="1sit11"> <label for="1sit11" class="c2"> &#49;&#50;</label>
+            <input type="checkbox" name="1sit12"  id="1sit12"> <label for="1sit12" class="c2"> &#49;&#51; </label>
+            <input type="checkbox" name="1sit13"  id="1sit13"> <label for="1sit13" class="c2"> &#49;&#52; </label>
+            <input type="checkbox" name="1sit14"  id="1sit14"> <label for="1sit14" class="c2"> &#49;&#53; </label>
+            <input type="checkbox" name="1sit15"  id="1sit15"> <label for="1sit15" class="c2"> &#49;&#54; </label>
+            <input type="checkbox" name="1sit16"  id="1sit16"> <label for="1sit16" class="c2"> &#49;&#55; </label>
+            <input type="checkbox" name="1sit17"  id="1sit17"> <label for="1sit17" class="c2"> &#49;&#56; </label>
+            <input type="checkbox" name="1sit18"  id="1sit18"> <label for="1sit18" class="c2"> &#49;&#57; </label>
+            <input type="checkbox" name="1sit19"  id="1sit19"> <label for="1sit19" class="c2"> &#50;&#48; </label>
+            </div>
+    </div>
+     <!-- Rreshti i karrigeve te C Majtas-->
+    <div class="sitesget3">
+        <div class="conteiner3">
+            <input type="checkbox" name="2sit"   id="2sit">  <label for="2sit" class="c3">  &#49; </label>
+            <input type="checkbox" name="2sit1"  id="2sit1"> <label for="2sit1" class="c3"> &#50; </label>
+            <input type="checkbox" name="2sit2"  id="2sit2"> <label for="2sit2" class="c3"> &#51; </label>
+            <input type="checkbox" name="2sit3"  id="2sit3"> <label for="2sit3" class="c3"> &#52; </label>
+            </div></div>
+             <!-- Rreshti i karrigeve te C ne mes-->
+            <div class="sitesget4">
+                <div class="conteiner4">
+            <input type="checkbox" name="3sit4"  id="3sit4"> <label for="3sit4" class="c4"> &#53; </label>
+            <input type="checkbox" name="3sit5"  id="3sit5"> <label for="3sit5" class="c4"> &#54; </label>
+            <input type="checkbox" name="3sit6"  id="3sit6"> <label for="3sit6" class="c4"> &#55; </label>
+            <input type="checkbox" name="3sit7"  id="3sit7"> <label for="3sit7" class="c4"> &#56; </label>
+            <input type="checkbox" name="3sit8"  id="3sit8"> <label for="3sit8" class="c4"> &#57; </label>
+            <input type="checkbox" name="3sit9"  id="3sit9"> <label for="3sit9" class="c4"> &#49;&#48; </label>
+            <input type="checkbox" name="3sit10"  id="3sit10"> <label for="3sit10" class="c4"> &#49;&#49; </label>
+            <input type="checkbox" name="3sit11"  id="3sit11"> <label for="3sit11" class="c4"> &#49;&#50;</label>
+            </div></div>
+             <!-- Rreshti i karrigeve te C djathtas-->
+            <div class="sitesget5">
+                <div class="conteiner5">
+            <input type="checkbox" name="4sit12"  id="4sit12"> <label for="4sit12" class="c5"> &#49;&#51; </label>
+            <input type="checkbox" name="4sit13"  id="4sit13"> <label for="4sit13" class="c5"> &#49;&#52; </label>
+            <input type="checkbox" name="4sit14"  id="4sit14"> <label for="4sit14" class="c5"> &#49;&#53; </label>
+            <input type="checkbox" name="4sit15"  id="4sit15"> <label for="4sit15" class="c5"> &#49;&#54; </label>
+            </div></div>
+             <!-- Rreshti i karrigeve te D majtas-->
+            <div class="sitesget6">
+                <div class="conteiner6">
+                    <input type="checkbox" name="5sit"   id="5sit">  <label for="5sit" class="c6">  &#49; </label>
+                    <input type="checkbox" name="5sit1"  id="5sit1"> <label for="5sit1" class="c6"> &#50; </label>
+                    <input type="checkbox" name="5sit2"  id="5sit2"> <label for="5sit2" class="c6"> &#51; </label>
+                    <input type="checkbox" name="5sit3"  id="5sit3"> <label for="5sit3" class="c6"> &#52; </label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te D ne mes-->
+                    <div class="sitesget7">
+                        <div class="conteiner7">
+                    <input type="checkbox" name="6sit4"  id="6sit4"> <label for="6sit4" class="c7"> &#53; </label>
+                    <input type="checkbox" name="6sit5"  id="6sit5"> <label for="6sit5" class="c7"> &#54; </label>
+                    <input type="checkbox" name="6sit6"  id="6sit6"> <label for="6sit6" class="c7"> &#55; </label>
+                    <input type="checkbox" name="6sit7"  id="6sit7"> <label for="6sit7" class="c7"> &#56; </label>
+                    <input type="checkbox" name="6sit8"  id="6sit8"> <label for="6sit8" class="c7"> &#57; </label>
+                    <input type="checkbox" name="6sit9"  id="6sit9"> <label for="6sit9" class="c7"> &#49;&#48; </label>
+                    <input type="checkbox" name="6sit10"  id="6sit10"> <label for="6sit10" class="c7"> &#49;&#49; </label>
+                    <input type="checkbox" name="6sit11"  id="6sit11"> <label for="6sit11" class="c7"> &#49;&#50;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te D djathtas-->
+                    <div class="sitesget8">
+                        <div class="conteiner8">
+                    <input type="checkbox" name="7sit12"  id="7sit12"> <label for="7sit12" class="c8"> &#49;&#51; </label>
+                    <input type="checkbox" name="7sit13"  id="7sit13"> <label for="7sit13" class="c8"> &#49;&#52; </label>
+                    <input type="checkbox" name="7sit14"  id="7sit14"> <label for="7sit14" class="c8"> &#49;&#53; </label>
+                    <input type="checkbox" name="7sit15"  id="7sit15"> <label for="7sit15" class="c8"> &#49;&#54; </label>
+                    </div></div>
+                    <!-- Rreshti i karrigeve te E majtas-->
+                    <div class="sitesget9">
+                        <div class="conteiner9">
+                    <input type="checkbox" name="8sit12"  id="8sit12"> <label for="8sit12" class="c9"> &#49; </label>
+                    <input type="checkbox" name="8sit13"  id="8sit13"> <label for="8sit13" class="c9"> &#50;</label>
+                    <input type="checkbox" name="8sit14"  id="8sit14"> <label for="8sit14" class="c9"> &#51;</label>
+                    <input type="checkbox" name="8sit15"  id="8sit15"> <label for="8sit15" class="c9"> &#52;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te E ne mes-->
+                    <div class="sitesget10">
+                        <div class="conteiner10">
+                    <input type="checkbox" name="9sit4"  id="9sit4"> <label for="9sit4" class="c10"> &#53; </label>
+                    <input type="checkbox" name="9sit5"  id="9sit5"> <label for="9sit5" class="c10"> &#54; </label>
+                    <input type="checkbox" name="9sit6"  id="9sit6"> <label for="9sit6" class="c10"> &#55; </label>
+                    <input type="checkbox" name="9sit7"  id="9sit7"> <label for="9sit7" class="c10"> &#56; </label>
+                    <input type="checkbox" name="9sit8"  id="9sit8"> <label for="9sit8" class="c10"> &#57; </label>
+                    <input type="checkbox" name="9sit9"  id="9sit9"> <label for="9sit9" class="c10"> &#49;&#48; </label>
+                    <input type="checkbox" name="9sit10"  id="9sit10"> <label for="9sit10" class="c10"> &#49;&#49; </label>
+                    <input type="checkbox" name="9sit11"  id="9sit11"> <label for="9sit11" class="c10"> &#49;&#50;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te E djathtas-->
+                    <div class="sitesget11">
+                        <div class="conteiner11">
+                    <input type="checkbox" name="10sit12"  id="10sit12"> <label for="10sit12" class="c11"> &#49;&#51; </label>
+                    <input type="checkbox" name="10sit13"  id="10sit13"> <label for="10sit13" class="c11"> &#49;&#52; </label>
+                    <input type="checkbox" name="10sit14"  id="10sit14"> <label for="10sit14" class="c11"> &#49;&#53; </label>
+                    <input type="checkbox" name="10sit15"  id="10sit15"> <label for="10sit15" class="c11"> &#49;&#54; </label>
+                    </div></div>
+                    <!-- Rreshti i karrigeve te F ne majtas-->
+                    <div class="sitesget12">
+                        <div class="conteiner12">
+                    <input type="checkbox" name="11sit12"  id="11sit12"> <label for="11sit12" class="c12"> &#49; </label>
+                    <input type="checkbox" name="11sit13"  id="11sit13"> <label for="11sit13" class="c12"> &#50;</label>
+                    <input type="checkbox" name="11sit14"  id="11sit14"> <label for="11sit14" class="c12"> &#51;</label>
+                    <input type="checkbox" name="11sit15"  id="11sit15"> <label for="11sit15" class="c12"> &#52;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te F ne mes-->
+                    <div class="sitesget13">
+                        <div class="conteiner13">
+                    <input type="checkbox" name="12sit4"  id="12sit4"> <label for="12sit4" class="c13"> &#53; </label>
+                    <input type="checkbox" name="12sit5"  id="12sit5"> <label for="12sit5" class="c13"> &#54; </label>
+                    <input type="checkbox" name="12sit6"  id="12sit6"> <label for="12sit6" class="c13"> &#55; </label>
+                    <input type="checkbox" name="12sit7"  id="12sit7"> <label for="12sit7" class="c13"> &#56; </label>
+                    <input type="checkbox" name="12sit8"  id="12sit8"> <label for="12sit8" class="c13"> &#57; </label>
+                    <input type="checkbox" name="12sit9"  id="12sit9"> <label for="12sit9" class="c13"> &#49;&#48; </label>
+                    <input type="checkbox" name="12sit10"  id="12sit10"> <label for="12sit10" class="c13"> &#49;&#49; </label>
+                    <input type="checkbox" name="12sit11"  id="12sit11"> <label for="12sit11" class="c13"> &#49;&#50;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te F djathtas-->
+                    <div class="sitesget14">
+                        <div class="conteiner14">
+                    <input type="checkbox" name="13sit12"  id="13sit12"> <label for="13sit12" class="c14"> &#49;&#51; </label>
+                    <input type="checkbox" name="13sit13"  id="13sit13"> <label for="13sit13" class="c14"> &#49;&#52; </label>
+                    <input type="checkbox" name="13sit14"  id="13sit14"> <label for="13sit14" class="c14"> &#49;&#53; </label>
+                    <input type="checkbox" name="13sit15"  id="13sit15"> <label for="13sit15" class="c14"> &#49;&#54; </label>
+                    </div></div>
+                       <!-- Rreshti i karrigeve te G ne majtas-->
+                       <div class="sitesget15">
+                        <div class="conteiner15">
+                    <input type="checkbox" name="14sit12"  id="14sit12"> <label for="14sit12" class="c15"> &#49; </label>
+                    <input type="checkbox" name="14sit13"  id="14sit13"> <label for="14sit13" class="c15"> &#50;</label>
+                    <input type="checkbox" name="14sit14"  id="14sit14"> <label for="14sit14" class="c15"> &#51;</label>
+                    <input type="checkbox" name="14sit15"  id="14sit15"> <label for="14sit15" class="c15"> &#52;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te G ne mes-->
+                    <div class="sitesget16">
+                        <div class="conteiner16">
+                    <input type="checkbox" name="15sit4"  id="15sit4"> <label for="15sit4" class="c16"> &#53; </label>
+                    <input type="checkbox" name="15sit5"  id="15sit5"> <label for="15sit5" class="c16"> &#54; </label>
+                    <input type="checkbox" name="15sit6"  id="15sit6"> <label for="15sit6" class="c16"> &#55; </label>
+                    <input type="checkbox" name="15sit7"  id="15sit7"> <label for="15sit7" class="c16"> &#56; </label>
+                    <input type="checkbox" name="15sit8"  id="15sit8"> <label for="15sit8" class="c16"> &#57; </label>
+                    <input type="checkbox" name="15sit9"  id="15sit9"> <label for="15sit9" class="c16"> &#49;&#48; </label>
+                    <input type="checkbox" name="15sit10"  id="15sit10"> <label for="15sit10" class="c16"> &#49;&#49; </label>
+                    <input type="checkbox" name="15sit11"  id="15sit11"> <label for="15sit11" class="c16"> &#49;&#50;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te G djathtas-->
+                    <div class="sitesget17">
+                        <div class="conteiner17">
+                    <input type="checkbox" name="16sit12"  id="16sit12"> <label for="16sit12" class="c17"> &#49;&#51; </label>
+                    <input type="checkbox" name="16sit13"  id="16sit13"> <label for="16sit13" class="c17"> &#49;&#52; </label>
+                    <input type="checkbox" name="16sit14"  id="16sit14"> <label for="16sit14" class="c17"> &#49;&#53; </label>
+                    <input type="checkbox" name="16sit15"  id="16sit15"> <label for="16sit15" class="c17"> &#49;&#54; </label>
+                    </div></div>
+                      <!-- Rreshti i karrigeve te H ne majtas-->
+                      <div class="sitesget18">
+                        <div class="conteiner18">
+                    <input type="checkbox" name="17sit12"  id="17sit12"> <label for="17sit12" class="c18"> &#49; </label>
+                    <input type="checkbox" name="17sit13"  id="17sit13"> <label for="17sit13" class="c18"> &#50;</label>
+                    <input type="checkbox" name="17sit14"  id="17sit14"> <label for="17sit14" class="c18"> &#51;</label>
+                    <input type="checkbox" name="17sit15"  id="17sit15"> <label for="17sit15" class="c18"> &#52;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te H ne mes-->
+                    <div class="sitesget19">
+                        <div class="conteiner19">
+                    <input type="checkbox" name="18sit4"  id="18sit4"> <label for="18sit4" class="c19"> &#53; </label>
+                    <input type="checkbox" name="18sit5"  id="18sit5"> <label for="18sit5" class="c19"> &#54; </label>
+                    <input type="checkbox" name="18sit6"  id="18sit6"> <label for="18sit6" class="c19"> &#55; </label>
+                    <input type="checkbox" name="18sit7"  id="18sit7"> <label for="18sit7" class="c19"> &#56; </label>
+                    <input type="checkbox" name="18sit8"  id="18sit8"> <label for="18sit8" class="c19"> &#57; </label>
+                    <input type="checkbox" name="18sit9"  id="18sit9"> <label for="18sit9" class="c19"> &#49;&#48; </label>
+                    <input type="checkbox" name="18sit10"  id="18sit10"> <label for="18sit10" class="c19"> &#49;&#49; </label>
+                    <input type="checkbox" name="18sit11"  id="18sit11"> <label for="18sit11" class="c19"> &#49;&#50;</label>
+                    </div></div>
+                     <!-- Rreshti i karrigeve te H djathtas-->
+                    <div class="sitesget20">
+                        <div class="conteiner20">
+                    <input type="checkbox" name="20sit12"  id="20sit12"> <label for="20sit12" class="c20"> &#49;&#51; </label>
+                    <input type="checkbox" name="20sit13"  id="20sit13"> <label for="20sit13" class="c20"> &#49;&#52; </label>
+                    <input type="checkbox" name="20sit14"  id="20sit14"> <label for="20sit14" class="c20"> &#49;&#53; </label>
+                    <input type="checkbox" name="20sit15"  id="20sit15"> <label for="20sit15" class="c20"> &#49;&#54; </label>
+                    </div></div>
+
+                    <h1 class="text-center text-uppercase text-warning">screen</h1>
+                    <h1 class="text-center text-uppercase text-warning">_________</h1>
+    
+        </div>
+    </div>
+   </div>
+   </div>
+
+   <div class="container bg-light">
+    <div class="row">
+        <div class="col">
+            <form class="form" action="#From" id="SendMyNameForm">
+                <label for="FullName">Full Name</label>
+                <input type="text" name="FullName" value="" placeholder="Your Name ..." id="FName" required>
+                <button class="btn-warning" onclick="SendFullName()" >Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="row bg-white ticket">
+        <div class="col-sm-6">
+            <h4 id="movie1"></h4>
+            <p class="text-secondary" id="FullName"></p>
+            <p id="ChoosenDate1"></p>
+            <h6 id="cinema"></h6>
+            <p id="price1"></p>
+            <p id="price2"></p>
+            <p id="price3"></p>
+            <p id="price4"></p>
+            <p id="price5"></p>
+        </div>
+        <div class="col-sm-6">
+            <img src="https://live.staticflickr.com/5264/5749279810_66943721c1_z.jpg" height="100px" width="100px" id="QrCode">
+            <p id="barcode"></p>
+            <p id="chair1"></p>
+            <p id="chair2"></p>
+            <p id="chair3"></p>
+            <p id="chair4"></p>
+            <p id="chair5"></p>
+            <p id="chair6"></p>
+            <p id="abc"></p>
+        </div>
+    </div>
+   </div>
+
+   <div class="container-fluid footer">
+    <div class="row">
+        <div class="col-sm-8">
+            <p class="text-white text-center">&copy; Copyright 2022 by Egli Maja .All Rights Reserved. MOVIETIME</p>
+        </div>
+       <div class="col-sm-4 ">
+        <a href="https://twitter.com/i/flow/login" >
+            <i class="fa-brands fa-twitter  footerIcons "></i>
+        </a>
+        <a href="https://www.facebook.com/">
+            <i class="fa-brands fa-facebook-f  footerIcons"></i>
+        </a>
+        <a href="https://www.skype.com/en/" >
+            <i class="fa-brands fa-skype   footerIcons"></i>
+        </a>
+        <a href="https://www.behance.net/" >
+            <i class="fa-brands fa-behance  footerIcons"></i>
+        </a>
+        <a href="https://al.linkedin.com/" >
+            <i class="fa-brands fa-linkedin-in   footerIcons"></i>
+        </a>
+       </div>
+        </div>
+        </div>
+                
+                <script src="site.js"> </script>
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+               
+</body>
+</body>
+</html>

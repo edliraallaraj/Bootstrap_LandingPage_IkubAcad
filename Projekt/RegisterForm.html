@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="RegisterForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="Regist">
+    <div class="navbar-expand-lg">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-link  col-sm-5 text-white">
+                <a  href="MovieTime.html" class="nav-link text-white nav-title"><h3>MovieTime</h3></a>
+            </li>
+                <li class="nav-item  col-sm-4">
+                    <a  class="nav-link text-warning disabled">Watch only in Movie time</a> 
+                </li>
+                <li class="nav-item col-sm-3">
+                    <a href="SignInForm.html" class="nav-link text-white text-center">Sing In</a> 
+                </li> 
+        </ul>
+    </div>
+   
+    <div class="container">
+                <form class="was-validated  bg-light" id="form" >
+                    <div class="row">
+                        <div class="col-xl-12">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" name="name" value="" placeholder="Your Name" id="name" class="type" required>
+                    
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" name="lname" value="" placeholder="Last Name" id="lname" class="type" required>
+                    
+                    <label for="EMAIL" class="form-label">Email</label>
+                    <input type="email" name="email" value="" placeholder="Email" id="EMAIL" class="type" required >
+                    
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" name="phone" value="" placeholder="Phone Number" id="phone" class="type" required>
+
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" name="password" value="" placeholder="Create Password" id="pass" class="type" required>
+                    
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="myCheck" name="checked" required>
+                        <label class="form-check-label" for="myCheck">I am agree to put my Data</label>
+                      </div>
+
+                    <button onclick="RegisterForm()" type="submit" class="btn-dark btn-outline-success send" >Send Data</button>
+
+                </div>
+                
+            </div>
+                </form>
+            </div>
+
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="text-white text-center">&copy; Copyright 2022 by Egli Maja .All Rights Reserved. MOVIETIME</p>
+                    </div>
+                   <div class="col-sm-4 ">
+                    <a href="https://twitter.com/i/flow/login" >
+                        <i class="fa-brands fa-twitter  footerIcons "></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f  footerIcons"></i>
+                    </a>
+                    <a href="https://www.skype.com/en/" >
+                        <i class="fa-brands fa-skype   footerIcons"></i>
+                    </a>
+                    <a href="https://www.behance.net/" >
+                        <i class="fa-brands fa-behance  footerIcons"></i>
+                    </a>
+                    <a href="https://al.linkedin.com/" >
+                        <i class="fa-brands fa-linkedin-in   footerIcons"></i>
+                    </a>
+                   </div>
+                    </div>
+                    </div>
+
+    <script src="Movie.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>

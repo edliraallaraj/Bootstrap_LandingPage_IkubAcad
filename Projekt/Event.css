@@ -1,0 +1,100 @@
+@media screen and (max-width: 500px) {
+    .container-fluid , .col-sm-4, .container{
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+    .karta{
+        width: 300px;
+        height: 200px;
+    }
+    .basic{
+        margin-left:  -595px ;
+    }
+  }
+  *.container-fluid-xl , .carousel , .carousel-inner , .container  {
+    margin-top:  0px;
+    margin-bottom:  0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+img{
+    width: 400px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    box-shadow: black 0px 3px 4px,
+                black 0px 1px 2px;
+}
+
+.container-fluid{
+    margin-top: 100px;
+    margin-left: 40px;
+    max-width: 1470px;
+}
+h4 {
+    margin-left: 30px;
+    width: 200px;
+    margin-top: 10px;
+}
+.btn-card{
+   background-color: rgb(245, 201, 39);
+   font-size: 20px;
+   margin-left: 30px;
+   width: 100px;
+   border-radius: 50px;
+   border: 1px solid rgb(245, 201, 39) ;
+   text-transform: uppercase;
+}
+
+.btn-card:hover {
+    background-color: rgb(255, 157, 0);
+    color: white;
+    transition: 300ms;
+}
+
+.informations{
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+}
+
+.type_card{
+    width: 300px;
+    margin-left: 735px;
+    height: 60px;
+}
+.type_card_info{
+   background-color: rgb(245, 201, 39) ;
+   margin-left:10px;
+   font-size: 20px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   text-align: center;
+   }
+   .basic{
+    margin-left: 35px;
+    margin-bottom: -60px;
+   }
+   .basic:hover , .standard:hover, .premium:hover {
+    border: 2px solid orange;
+    background-color: transparent;
+    height: 400px;
+    position: absolute;
+    width: 100px;
+   }
+   .standard{
+    margin-left: 250px;
+    margin-bottom: -60px;
+   }
+   .premium{
+    margin-left: 490px;
+   }
+  
+.footer{
+    margin-top: 50px;
+    background-color: #1d2025;
+    padding: 40px;
+  }
+  .footerIcons{
+    color: white;
+    margin: 5px;
+    text-align: center;
+  }

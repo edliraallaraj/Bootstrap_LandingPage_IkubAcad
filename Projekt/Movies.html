@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="moviesWatch.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Movies.CSS">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark ">
+        <a class="navbar-brand" href="MovieTime.html"><h4>MovieTime</h4></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white " onclick="CinemaTicket()">Get My Ticket</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="dropdown01" data-toggle="dropdown" aria-expanded="false">Genre</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <div class="row">
+                <div class="col-sm-3">
+                  <a class="dropdown-item" href="#action" id="Col1Gen1"></a>
+                  <a class="dropdown-item" href="#animation" id="Col1Gen2"></a>
+                  <a class="dropdown-item" href="#adventure" id="Col1Gen3"></a>
+                  <a class="dropdown-item" href="#biography" id="Col1Gen4"></a>
+                </div>
+                <div class="col-sm-3">
+                  <a class="dropdown-item" href="#documentar" id="Col2Gen1"></a>
+                  <a class="dropdown-item" href="#drama" id="Col2Gen2"></a>
+                  <a class="dropdown-item" href="#family" id="Col2Gen3"></a>
+                  <a class="dropdown-item" href="#fiction" id="Col2Gen4"></a>
+                </div>
+                <div class="col-sm-3">
+                  <a class="dropdown-item" href="#fantasy" id="Col3Gen1"></a>
+                  <a class="dropdown-item" href="#horror" id="Col3Gen2"></a>
+                  <a class="dropdown-item" href="#thriller" id="Col3Gen3"></a>
+                  <a class="dropdown-item" href="#romance" id="Col3Gen4"></a>
+                </div>
+                <div class="col-sm-3">
+                  <a class="dropdown-item" href="#western" id="Col4Gen1"></a>
+                </div>
+                </div>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0" id="Form">
+                <input class="form-control mr-sm-2" type="text" id="Search" placeholder="Search" name="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0"  onclick="SearchEngine()" >Search</button>
+              </form>
+          </div>
+        </nav>
+        
+        <!-- Animation -->
+        <div class="container-fluid-hr ">
+
+            <div class="container-fluid-xl">
+                <div id="carosel1" class="carousel slide" data-ride="carousel">
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div id="action"><h4 id="BodyGenre1"></h4></div>
+                            <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://townsquare.media/site/442/files/2016/06/face_off_xlg1.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3"">
+                                <img src="https://i.pinimg.com/550x/38/33/6b/38336bed033197b8268103898d48508a.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="https://media-cache.cinematerial.com/p/500x/juv5duoq/son-of-a-gun-spanish-movie-poster.jpg?v=1456372027" onclick="WatchMovie()" alt="" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="https://media-cache.cinematerial.com/p/500x/mkzhuzz3/sicario-movie-cover.jpg?v=1456071520" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                        </div></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div  id="action"><h4 id="BodyGenre01"></h4></div>
+                            <div class="row">
+                            <div class="col-sm-3">
+                                <img src="https://media-cache.cinematerial.com/p/500x/juv5duoq/son-of-a-gun-spanish-movie-poster.jpg?v=1456372027" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3"">
+                                <img src="https://i.pinimg.com/550x/38/33/6b/38336bed033197b8268103898d48508a.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="https://media-cache.cinematerial.com/p/500x/mkzhuzz3/sicario-movie-cover.jpg?v=1456071520" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                            <div class="col-sm-3">
+                                <img src="https://i.pinimg.com/550x/38/33/6b/38336bed033197b8268103898d48508a.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                            </div>
+                        </div></div>
+                </div>
+              </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carosel1" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carosel1" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+            </div>
+<!-- Animation -->
+            <div class="container-fluid-xl" id="animation">
+                <div id="carosel2" class="carousel slide" data-ride="carousel">
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="text-white" ><h4 id="BodyGenre2"></h4></div>
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://i.pinimg.com/474x/4c/5a/4d/4c5a4dddbe33d4b3974f87ef90489a90.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3"">
+                            <img src="https://i.pinimg.com/736x/06/e1/cb/06e1cbfd1779430f92b5937ae25afcb8.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-1529422362.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://www.dreamworks.com/storage/movies/bee-movie/posters/bee-movie-poster-1.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                    </div></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="text-white" ><h4 id="BodyGenre02"></h4></div>
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/frozen-1529422362.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3"">
+                            <img src="https://www.dreamworks.com/storage/movies/bee-movie/posters/bee-movie-poster-1.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://i.pinimg.com/474x/4c/5a/4d/4c5a4dddbe33d4b3974f87ef90489a90.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://i.pinimg.com/736x/06/e1/cb/06e1cbfd1779430f92b5937ae25afcb8.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                    </div></div>
+                </div>
+              </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carosel2" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carosel2" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+            </div>
+
+            <!-- Adventure -->
+            <div class="container-fluid-xl" id="adventure">
+                <div id="carosel3" class="carousel slide" data-ride="carousel">
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="text-white" ><h4 id="BodyGenre3"></h4></div>
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://better-go-now.com/wp-content/uploads/2016/03/hitchhigerthrouggalaxy.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://i.pinimg.com/564x/63/aa/1a/63aa1ace4ad4a0623e477e9d67bcbfa3--steven-spielberg-movies-steven-moffat.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTU3MDE4MDU1Nl5BMl5BanBnXkFtZTcwNDM2NDI5MQ@@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px"> 
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://better-go-now.com/wp-content/uploads/2016/10/In-Bruges.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                    </div></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="text-white" ><h4 id="BodyGenre03"></h4></div>
+                        <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://i.pinimg.com/564x/63/aa/1a/63aa1ace4ad4a0623e477e9d67bcbfa3--steven-spielberg-movies-steven-moffat.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://better-go-now.com/wp-content/uploads/2016/03/hitchhigerthrouggalaxy.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://better-go-now.com/wp-content/uploads/2016/10/In-Bruges.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px"> 
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTU3MDE4MDU1Nl5BMl5BanBnXkFtZTcwNDM2NDI5MQ@@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                        </div>
+                    </div></div>
+                </div>
+              </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carosel3" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carosel3" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+            </div>
+
+            <div class="container-fluid-xl" id="biography">
+                <div id="carosel4" class="carousel slide" data-ride="carousel">
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="text-white" id="biography"><h4 id="BodyGenre4"></h4></div>
+                        <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://www.filmposters.com/images/posters/14849.jpg" class="rounded" alt="" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://cdn.shopify.com/s/files/1/1416/8662/products/42_2013_original_film_art_5000x.jpg?v=1562541307" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/11/KENNY-artwork-Coffee-and-Cigarettes-1.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="backIMG">
+                        <img src="https://preview.redd.it/0r5ytq0fim971.jpg?width=640&crop=smart&auto=webp&s=95dce000c2343c589cf78631d958f511973617ce" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                </div></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="text-white" id="biography"><h4 id="BodyGenre04"></h4></div>
+                        <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://preview.redd.it/0r5ytq0fim971.jpg?width=640&crop=smart&auto=webp&s=95dce000c2343c589cf78631d958f511973617ce" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/11/KENNY-artwork-Coffee-and-Cigarettes-1.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://cdn.shopify.com/s/files/1/1416/8662/products/42_2013_original_film_art_5000x.jpg?v=1562541307" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://www.filmposters.com/images/posters/14849.jpg"" class="rounded" alt="" height="350px" width="255px">
+                    </div>
+                </div></div>
+                </div>
+              </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carosel4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carosel4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+            </div>
+
+            <!-- Documentar -->
+            <div class="container-fluid-xl" id="documentar">
+                <div id="carosel5" class="carousel slide" data-ride="carousel">
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="text-white" ><h4 id="BodyGenre5"></h4></div>
+                        <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://m.media-amazon.com/images/I/71VNCp1lHCL._AC_SL1334_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://images.squarespace-cdn.com/content/v1/54866b96e4b062e01ab10882/1570493947788-GYL4QMBEPE1H7QQ7M2RB/POSTERBASE+27.39.5_6BB3torn_sm*.jpg?format=1500w" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="backIMG">
+                        <img src="https://i.pinimg.com/564x/77/31/bc/7731bc7b62e62f7c561aa36483893210--best-movie-posters-film-posters.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div></div>
+                    <div class="col-sm-3">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzMyMTM1MjQxNF5BMl5BanBnXkFtZTgwMjY4NTE5NjE@._V1_FMjpg_UX1000_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                </div></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="text-white"><h4 id="BodyGenre05"></h4></div>
+                        <div class="row">
+                    <div class="col-sm-3">
+                        <img src="https://i.pinimg.com/564x/77/31/bc/7731bc7b62e62f7c561aa36483893210--best-movie-posters-film-posters.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzMyMTM1MjQxNF5BMl5BanBnXkFtZTgwMjY4NTE5NjE@._V1_FMjpg_UX1000_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://m.media-amazon.com/images/I/71VNCp1lHCL._AC_SL1334_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="https://images.squarespace-cdn.com/content/v1/54866b96e4b062e01ab10882/1570493947788-GYL4QMBEPE1H7QQ7M2RB/POSTERBASE+27.39.5_6BB3torn_sm*.jpg?format=1500w" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+                    </div>
+                </div></div>
+                </div>
+              </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carosel5" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#carosel5" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+            </div>
+            </div>
+
+            <!-- Drama -->
+
+                <div class="container-fluid-xl" id="drama">
+        <div id="carosel6" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre6"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://collider.com/wp-content/uploads/serena-poster.jpeg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.assignmentx.com/wp-content/uploads/2019/04/RED-JOAN-movie-poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.filmsourcing.com/wp-content/uploads/2015/09/indie5.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/09/Euphoria.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre06"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://www.coffeeandcigarettes.co.uk/wp-content/uploads/2017/09/Euphoria.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://collider.com/wp-content/uploads/serena-poster.jpeg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.filmsourcing.com/wp-content/uploads/2015/09/indie5.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.assignmentx.com/wp-content/uploads/2019/04/RED-JOAN-movie-poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel6" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel6" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Family -->
+
+    <div class="container-fluid-xl"  id="family">
+        <div id="carosel7" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white"><h4  id="BodyGenre7"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://picfiles.alphacoders.com/233/233166.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://static2.showtimes.com/poster/660x980/family-is-family-126633.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTkyOTQzMjE4Ml5BMl5BanBnXkFtZTgwOTMwMDE4NzM@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0548/8404/0870/products/TheFamilyComedy-PersonalizedMoviePoster_b59527ba-7360-415b-98b3-33b4086e7c06_1200x.jpg?v=1617385439" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white"><h4  id="BodyGenre07"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0548/8404/0870/products/TheFamilyComedy-PersonalizedMoviePoster_b59527ba-7360-415b-98b3-33b4086e7c06_1200x.jpg?v=1617385439" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTkyOTQzMjE4Ml5BMl5BanBnXkFtZTgwOTMwMDE4NzM@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://static2.showtimes.com/poster/660x980/family-is-family-126633.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://picfiles.alphacoders.com/233/233166.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel7" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel7" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Fiction -->
+
+    <div class="container-fluid-xl" id="fiction">
+        <div id="carosel8" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4  id="BodyGenre8"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6dfcefd659bfda675cc415ae35be5299227e08a3533c249fa0cdc0fa2fcaad04._RI_V_TTW_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bmtc5otk4mtm3m15bml5banbnxkftztgwodcxnjg3mdeat-v1-1-1589308231.jpg?crop=1xw:1xh;center,top&resize=480:*" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2ZmNDIyNmQtMjExMi00ODNmLThiYzYtNTRlZGRlNzQxOTU4XkEyXkFqcGdeQXVyNTkzMzg3NDM@._V1_FMjpg_UX1000_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre08"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mv5bmtc5otk4mtm3m15bml5banbnxkftztgwodcxnjg3mdeat-v1-1-1589308231.jpg?crop=1xw:1xh;center,top&resize=480:*" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6dfcefd659bfda675cc415ae35be5299227e08a3533c249fa0cdc0fa2fcaad04._RI_V_TTW_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/M/MV5BY2ZmNDIyNmQtMjExMi00ODNmLThiYzYtNTRlZGRlNzQxOTU4XkEyXkFqcGdeQXVyNTkzMzg3NDM@._V1_FMjpg_UX1000_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel8" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel8" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Fantasy -->
+    <div class="container-fluid-xl" id="fantasy">
+        <div id="carosel9" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre9"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://goodmovieslist.com/best-movies/movie-posters/tt0457430.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/avatar_800x1200_208c9665.jpeg?region=0%2C0%2C800%2C1200" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.film-fish.com/uploads/movie/7ec40a7f64ba175a91902e0fb2ab44f3.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre09"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/p_beautyandthebeast_19752_32e65c36.jpeg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.film-fish.com/uploads/movie/7ec40a7f64ba175a91902e0fb2ab44f3.jpg" class="rounded" onclick="WatchMovie()"  height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/avatar_800x1200_208c9665.jpeg?region=0%2C0%2C800%2C1200" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://goodmovieslist.com/best-movies/movie-posters/tt0457430.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel9" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel9" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Horror -->
+    <div class="container-fluid-xl" id="horror">
+        <div id="carosel10" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre10"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/68/8c/b3/688cb3df1a36142e670f0b86303ff37b.jpg" class="rounded" onclick="WatchMovie()"  height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/23/18/asset/a043cd957e52/sub-buzz-575-1603478161-20.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-02/21/21/asset/393f0faf5e1e/sub-buzz-593-1582322240-8.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-02/21/21/asset/67e0a7b6fedf/sub-buzz-386-1582319799-2.jpg?crop=1013%3A1481%3B0%2C9&resize=475%3A%2A" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre010"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-02/21/21/asset/393f0faf5e1e/sub-buzz-593-1582322240-8.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-02/21/21/asset/67e0a7b6fedf/sub-buzz-386-1582319799-2.jpg?crop=1013%3A1481%3B0%2C9&resize=475%3A%2A" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/68/8c/b3/688cb3df1a36142e670f0b86303ff37b.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-10/23/18/asset/a043cd957e52/sub-buzz-575-1603478161-20.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel10" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel10" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Thriller -->
+
+    <div class="container-fluid-xl" id="thriller">
+        <div id="carosel11" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre11"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/I/41AXQWp8tbL.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/564x/26/10/83/261083cd1496ba590f7ace2c39b3d420.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/474x/5a/aa/ff/5aaaff7e53d392dd6f117de4b6095cb6.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://moviesandmania.com/wp-content/uploads/2022/04/Find-Her-movie-film-mystery-thriller-Nick-McCallum-2022-poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre011"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/474x/5a/aa/ff/5aaaff7e53d392dd6f117de4b6095cb6.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/564x/26/10/83/261083cd1496ba590f7ace2c39b3d420.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://moviesandmania.com/wp-content/uploads/2022/04/Find-Her-movie-film-mystery-thriller-Nick-McCallum-2022-poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/I/41AXQWp8tbL.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel11" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel11" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Romance -->
+
+    <div class="container-fluid-xl" id="romance">
+        <div id="carosel12" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre12"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://www.tivoliwimborne.co.uk/wp-content/uploads/2016/05/Me-Before-You-Movie-Poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0548/8404/0870/products/FiveYears-RomanticMoviePoster_fa613900-eb67-430e-ab70-d3b272b718c2_1200x.jpg?v=1617198670" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/e7/09/36/e709361504ffceb0177e57a015affa35.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://121clicks.com/wp-content/uploads/2011/10/movie_posters_photography14.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre012"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/e7/09/36/e709361504ffceb0177e57a015affa35.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://121clicks.com/wp-content/uploads/2011/10/movie_posters_photography14.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://www.tivoliwimborne.co.uk/wp-content/uploads/2016/05/Me-Before-You-Movie-Poster.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0548/8404/0870/products/FiveYears-RomanticMoviePoster_fa613900-eb67-430e-ab70-d3b272b718c2_1200x.jpg?v=1617198670" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel12" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel12" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+    <!-- Western -->
+    <div class="container-fluid-xl"  id="western">
+        <div id="carosel13" class="carousel slide" data-ride="carousel">
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="text-white" ><h4 id="BodyGenre13"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/ThePowerOfTheDog-BenedictCumberbatch-HollywoodWesternMoviePoster_2f690e34-2bb4-4dca-ab6f-dcb1bb03b454_large.jpg?v=1648639413" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/I/61HDKYEwbmL._AC_SY741_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/27/8e/be/278ebec616cef0bd3ccb6313a537af45.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/1083/5290/products/High_Noon_Movie_Poster_27x40_large.jpg?v=1459475761" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="text-white"><h4 id="BodyGenre013"></h4></div>
+                <div class="row">
+            <div class="col-sm-3">
+                <img src="https://m.media-amazon.com/images/I/61HDKYEwbmL._AC_SY741_.jpg" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/1083/5290/products/High_Noon_Movie_Poster_27x40_large.jpg?v=1459475761" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://i.pinimg.com/originals/27/8e/be/278ebec616cef0bd3ccb6313a537af45.jpg" class="rounded" v height="350px" width="255px">
+            </div>
+            <div class="col-sm-3">
+                <img src="https://cdn.shopify.com/s/files/1/0969/9128/products/ThePowerOfTheDog-BenedictCumberbatch-HollywoodWesternMoviePoster_2f690e34-2bb4-4dca-ab6f-dcb1bb03b454_large.jpg?v=1648639413" class="rounded" onclick="WatchMovie()" height="350px" width="255px">
+            </div>
+        </div></div>
+        </div>
+      </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carosel13" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#carosel13" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+    </div>
+    </div>
+
+            </div>
+
+            <div class="container-fluid footer">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="text-white text-center">&copy; Copyright 2022 by Egli Maja .All Rights Reserved. MOVIETIME</p>
+                    </div>
+                   <div class="col-sm-4 ">
+                    <a href="https://twitter.com/i/flow/login" >
+                        <i class="fa-brands fa-twitter  footerIcons "></i>
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f  footerIcons"></i>
+                    </a>
+                    <a href="https://www.skype.com/en/" >
+                        <i class="fa-brands fa-skype   footerIcons"></i>
+                    </a>
+                    <a href="https://www.behance.net/" >
+                        <i class="fa-brands fa-behance  footerIcons"></i>
+                    </a>
+                    <a href="https://al.linkedin.com/" >
+                        <i class="fa-brands fa-linkedin-in   footerIcons"></i>
+                    </a>
+                   </div>
+                    </div>
+                    </div>
+                
+
+    <script src="Movie.js"> </script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+.navbar-nav{
+    background-color: #1d2025;
+    padding: 10px;
+   }
+   .nav-link{
+     margin-top: 10px;
+     font-size: 20px;
+   }
+   
+   .nav-title{
+    text-transform: uppercase;
+    margin-top: -5px;
+   }
+/* register form */
+.Regist{
+    background-image: url(first.png);
+    }
+
+.was-validated{
+  box-sizing: border-box;
+  border: 1px solid rgb(163, 163, 163);
+  box-shadow: rgb(163, 163, 163) 0px 0px 10px ,
+  rgb(163, 163, 163) 0px 0px 10px ;
+  height: auto;
+  width:  100%;
+  margin-top: 5%;
+  float:left;
+}
+    .form-label{
+    font-size: 20px;
+    margin: 15px;
+    width: 150px;
+  }
+  
+  .valid-feedback , .invalid-feedback , .btn-dark , .form-check-label{
+    margin: 15px;
+  }
+  input[type="checkbox"].form-check-input{
+    margin-left: -5px ;
+  }
+ .send{
+    font-size: 20px;
+    width: 240px;
+    margin-left: 180px;
+ }
+  .type{
+    font-size: 20px;
+  
+  }
+  
+  /* Footer */
+  .footer{
+    margin-top: 582px;
+    background-color: #1d2025;
+    padding: 40px;
+  }
+  .footer2{
+    margin-top: 200px;
+    background-color: #1d2025;
+    padding: 40px;
+  }
+  .footerIcons{
+    color: white;
+    margin: 5px;
+    margin-left: 12%;
+    
+  }
+
+  /* Sing in Form */
+  .SingIn{
+    margin-top: 7%;
+    
+  }
+  #form{
+    width: 500px;
+    border: 1px solid gray;
+    height: auto;
+  }
+  .SingIntype{
+    font-size: 25px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    left : 0 ;
+    right: 0;
+  }

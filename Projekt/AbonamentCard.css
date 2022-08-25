@@ -1,0 +1,48 @@
+.container-fluid{
+    margin-top: 100px;
+    text-align: center;
+}
+.img-barcode{
+  width: 200px;
+  height: 150px;
+}
+.CheckedPrice{
+  margin-top: 50px;
+  margin-left: 380px;
+}
+.form{
+  margin-bottom: 50px;
+  
+}
+#fname , #lname , #passw , #cwc{
+  width: 100%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.Credid_Card{
+  width: 150px;
+  height: 100px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+input[type="checkbox"]{
+  margin-left: 150px;
+}
+
+.btn-outline-danger{
+  margin-left: 450px;
+  width: 200px;
+  font-size: 20px;
+}
+.footer{
+    margin-top: 80px;
+    background-color: #1d2025;
+    padding: 40px;
+  }
+
+  .footerIcons{
+    color: white;
+    margin: 5px;
+    margin-left: 12%;
+  }
