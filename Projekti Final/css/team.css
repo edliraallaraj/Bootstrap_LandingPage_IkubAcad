@@ -1,0 +1,88 @@
+nav{
+    background-color: rgba(1, 177, 1, 0.763);
+    width: 100%;
+}
+#nav-list{
+    margin-right: 5px;
+}
+#nav-list a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+#nav-list-right{
+    margin-left: 47%;
+}
+#nav-list-right a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list-right a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list-right a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+
+#imgtop{
+    background-image: url("https://thumbs.dreamstime.com/b/asian-food-served-wooden-table-top-view-white-chinese-vietnamese-cuisine-set-86738748.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10%;
+    margin-top: -20px;
+}
+#imgtop-pg h1{
+    color: rgb(255, 166, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+#imgtop-pg button{
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+#imgtop-pg p{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Our Team*/
+
+#our-team{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10%;
+}
+
+#our-team-left{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+#img-radius{
+    border-radius: 50%;
+}
+#img-radius:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+/*Footer*/
+
+#footer{
+    margin-bottom: 0px;
+}

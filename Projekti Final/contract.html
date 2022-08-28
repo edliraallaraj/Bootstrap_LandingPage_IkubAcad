@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/contract.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header" id="nav-list">
+                <a class="navbar-brand" href="home.html">Home</a>
+            </div>
+            <div class="navbar-header" id="nav-list-right">
+                <a class="navbar-brand" href="aboutus.html">About</a>
+                <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+                <a class="navbar-brand" href="blog.html">Blog</a>
+                <a class="navbar-brand" href="team.html">Team</a>
+                <a class="navbar-brand" href="contract.html">Contact</a>
+                <a class="navbar-brand" href="login.html">Log Out</a>
+            </div>
+        </div>
+    </nav>
+    <!--Image, h2 ad paragraphs-->
+    <div  class="container" id="imgtop">
+        <div  class="row justify-content-between">
+            <div class="text-center" id="imgtop-pg">
+                <h1>Contract</h1>
+            </div>
+        </div>
+    </div>
+    <!--Forms-->
+    <div class="container" id="form-padding">
+        <div class="row">
+            <div class="col-md-4">
+                <h1>Get in Touch</h1>
+            </div>
+            <div class="col-md-8">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="myName">Name:</label>
+                        <input type="text" class="form-control" name="myName" id="myName" placeholder="Your Name">
+                        <i></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email @email.com">
+                        <i></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="3" name="message" id="message"></textarea>
+                        <i></i>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--Footer in copyright-->
+    <footer>
+        <div class="jumbotron text-center" id="footer">
+            © Copyright <strong><span>Nikola Troqe</span></strong> 2022. All Rights Reserved
+        </div>
+    </footer>
+    <script src="js/contract.js"></script>
+</body>
+</html>

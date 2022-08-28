@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(0, 59, 210);
+}
+#form{
+    margin-left: 15%;
+    background-color: #ffffff;
+    width: 40%;
+    border-radius: 5px;
+    font-family: Calibri;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+#form p{
+    text-align: center;
+    font-style: italic;
+}
+#body-register{
+    margin-left: 15%;
+    padding: 20px;
+}
+#form-reg{
+    margin-left: 15%; 
+}
+#form-reg input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+}
+#form-checkbox{
+    text-align: center;
+}
+#pg-reg{
+    text-align: center;
+}
+span{
+    color: red;
+}
+#form-reg.success input{
+    border:2px solid rgb(26, 167, 26);
+}
+#form-reg.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+#form-reg button{
+    width: 80%;
+    background-color: #5b5b5b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+}
+#form-reg button:hover{
+    width: 80%;
+    background-color: rgb(0, 0, 161);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+}
+#form-reg button:active{
+    width: 80%;
+    background-color: rgb(80, 109, 159);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    display: block;
+}

@@ -1,0 +1,214 @@
+/*Navbar*/
+nav{
+    background-color: rgba(1, 177, 1, 0.763);
+    width: 100%;
+}
+#nav-list{
+    margin-right: 5px;
+}
+#nav-list a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+#nav-list-right{
+    margin-left: 47%;
+}
+#nav-list-right a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#nav-list-right a:hover{
+    background-color: greenyellow;
+    margin-left: 10px;
+}
+#nav-list-right a:active{
+    background-color: green;
+    margin-left: 10px;
+}
+/*TOP Image*/
+#imgtop{
+    background-image: url("https://thumbs.dreamstime.com/b/asian-food-served-wooden-table-top-view-white-chinese-vietnamese-cuisine-set-86738748.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 10%;
+    margin-top: -20px;
+}
+#imgtop-pg h1{
+    color: rgb(255, 166, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+#imgtop-pg button{
+    background-color: darkblue;
+    color: white;
+    border: none;
+}
+#imgtop-pg p{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Portfolio*/
+#pg-padding{
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+#img{
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+#column:hover .middle1 {
+    opacity: 1;
+  }
+#column:hover .middle4 {
+    opacity: 1;
+  }
+  #column:hover .middle7 {
+    opacity: 1;
+  }
+  #column:hover .middle2 {
+    opacity: 1;
+  }
+  #column:hover .middle3 {
+    opacity: 1;
+  }
+  #column:hover .middle4{
+    opacity: 1;
+  }
+  #column:hover .middle5{
+    opacity: 1;
+  }
+  #column:hover .middle6{
+    opacity: 1;
+  }
+  #column:hover .middle7{
+    opacity: 1;
+  }
+  #column:hover .middle8{
+    opacity: 1;
+  }
+  #column:hover .middle9{
+    opacity: 1;
+  }
+.text {
+    background-color: rgb(228, 228, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    opacity: 0.8;
+  }
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.middle3 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.middle4 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .middle5 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .middle6 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .middle7 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .middle8 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .middle9 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+#portfolio{
+    padding-top: 50px;
+}
+#portfolio-margin{
+    margin: 10px;
+    padding: 10px;
+}
+#portfolio-margin img{
+    margin: 20px;
+}
+#portfolio-margin img:hover{
+    border: 2px solid rgb(189, 189, 189);
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.2s
+}
+#portfolio-margin img:active{
+    border: 3px solid rgb(35, 35, 35);
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s
+}
+/*Footer*/
+
+#footer{
+    margin-bottom: 0px;
+}
